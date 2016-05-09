@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+    <Stable>
+        <onyx>
+            <Filename>validus_onyx-6.0.1.beta.9.2-Official-20160509.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ValidusOs build">https://www.androidfilehost.com/?w=files&amp;flid=54154</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View ValidusOs changelogs"></ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Open gapps">http://opengapps.org/</GappsUrl>
+            <XDAUrl
+                id="xda"
+                title="XDA"
+                description="Visit ValudusOs onyx XDA thread">Maybe someday</XDAUrl>
+        </onyx>
+    </Stable>
+</SlimOTA>
+
