@@ -58,6 +58,44 @@
                 title="XDA"
                 description="Visit ValidusOs onyx XDA thread">Maybe someday</XDAUrl>
         </oneplus2>
+        <yuga>
+            <Filename>validus_yuga-6.0.1.beta.9.2-Unofficial-20160507</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download latest Validus build">https://www.androidfilehost.com/?fid=24533103863137668</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View ValidusOs changelogs"></ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
+            <XDAUrl
+                id="xda"
+                title="XDA"
+                description="Visit Validus yuga thread">http://forum.xda-developers.com/xperia-z/development/rom-gzroms-validus-t3359448</XDAUrl>
+	</yuga>
+        <dogo>
+            <Filename>validus_dogo-6.0.1.beta.9.2-Unofficial-20160509</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download latest Validus build">https://www.androidfilehost.com/?fid=24533103863138213</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View ValidusOs changelogs"></ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
+            <XDAUrl
+                id="xda"
+                title="XDA"
+                description="Visit Validus dogo thread">http://forum.xda-developers.com/xperia-zr/development/rom-validus-rom-ground-zero-roms-t3365364</XDAUrl>
+	</dogo>
     </Stable>
 </SlimOTA>
 
