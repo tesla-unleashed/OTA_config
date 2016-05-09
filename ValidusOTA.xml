@@ -10,7 +10,7 @@
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View ValidusOs changelogs"></ChangelogUrl>
+                description="View ValidusOs changelogs">https://github.com/ValidusOs-M/OTA_config/blob/master/Changelog.txt</ChangelogUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
@@ -29,7 +29,7 @@
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View ValidusOs changelogs"></ChangelogUrl>
+                description="View ValidusOs changelogs">https://github.com/ValidusOs-M/OTA_config/blob/master/Changelog.txt</ChangelogUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
@@ -48,7 +48,7 @@
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View ValidusOs changelogs"></ChangelogUrl>
+                description="View ValidusOs changelogs">https://github.com/ValidusOs-M/OTA_config/blob/master/Changelog.txt</ChangelogUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
