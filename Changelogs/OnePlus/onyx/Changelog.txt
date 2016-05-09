@@ -1,0 +1,278 @@
+====================
+     05-09-2016
+====================
+   * OTA_config/
+b1e77ad  onyx: fix typo  [Martinusbe]
+b0607b3  onyx: Banks gapps  [Martinusbe]
+97bd877  fixes  [Martinusbe]
+8cd3268  create initial files  [Martinusbe]
+   * device/oneplus/onyx/
+db4c923  onyx: Update Audio Configuration  [Martinusbe]
+8ff8e50  onyx: Update Audio Flags  [Martinusbe]
+d7bf0bc  onyx: Offer a more viable Brightness setting  [Martinusbe]
+   * frameworks/av/
+23426b8  Fix AMR decoder  [Martinusbe]
+1bf14c2  SoftAMR: check input buffer size to avoid overflow.  [Martinusbe]
+ab59198  SoftAMR: check output buffer size to avoid overflow.  [Martinusbe]
+85c6254  codecs: check OMX buffer size before use in VP8 encoder.  [Martinusbe]
+f1e81c9  NuPlayerStreamListener: NULL and bounds check before memcpy  [Martinusbe]
+a604ab7  Camera3Device: Validate template ID  [Martinusbe]
+2db02ec  Add VPX output buffer size check  [Martinusbe]
+   * frameworks/base/
+48c0d40  dexopt: logo size 300dp  [Martinusbe]
+9d87274  [DO NOT MERGE] Disallow guest user from changing Wifi settings  [Martinusbe]
+   * frameworks/native/
+9271b3e  BQ: fix some uninitialized variables  [Martinusbe]
+320865e  Fix issue #27252896: Security Vulnerability -- weak binder  [Martinusbe]
+   * libcore/
+4d0ee69  CipherTest: add test for multiple updateAAD calls  [Martinusbe]
+6d93f65  CipherTest: test instance reuse with updateAAD  [Martinusbe]
+   * manifest/
+f022508  OTA_config  [Martinusbe]
+   * system/core/
+c7b2f6d  Don't demangle symbol names.  [Martinusbe]
+
+====================
+     05-08-2016
+====================
+
+   * vendor/validus/
+d619a9c  Add and update apns for R. of Macedonia  [airless   *]
+
+====================
+     05-07-2016
+====================
+
+
+====================
+     05-06-2016
+====================
+
+
+====================
+     05-05-2016
+====================
+
+   * build/
+887c6ae  "MOB30J"  [Martinusbe]
+76749be  "MOB30I"  [Martinusbe]
+f81e08d  "MOB30H"  [Martinusbe]
+b605a2e  "MOB30G"  [Martinusbe]
+f6f45dd  "MOB30F"  [Martinusbe]
+ef2d0a4  "MOB30E"  [Martinusbe]
+3c54ff9  Update Security String to 2016-05-01 in preparation for May 2016 Security OTA  [Martinusbe]
+   * manifest/
+97d2758  6.0.1_r43  [martin coulon]
+
+====================
+     05-04-2016
+====================
+
+   * external/wpa_supplicant_8/
+c9ffe7b  Guard against return value already being null  [Josue Rivera]
+a2ad534  Remove newlines from config output  [Josue Rivera]
+   * hardware/broadcom/wlan/
+7b9cfbd  net: wireless: bcmdhd: update bcm4358 FW (7.112.200.5) [DO NOT MERGE]  [Josue Rivera]
+f7c620c  net: wireless: bcmdhd: Update bcm4354/56 FW(7.35.101.1) [DO NOT MERGE]  [Josue Rivera]
+e194377  net: wireless: bcmdhd: update bcm4339 FW 6.37.32.RC23.34.42 [DO NOT MERGE]  [Josue Rivera]
+   * packages/apps/Email/
+a02b005  Don't allow cachedFile Attachments if the content Uri is pointing to EmailProvider.  [Josue Rivera]
+   * packages/apps/UnifiedEmail/
+022143f  Don't allow cachedFile Attachments if the content Uri is pointing to EmailProvider.  [Josue Rivera]
+   * system/bt/
+13b51eb  DO NOT MERGE Check size of pin before replying  [Josue Rivera]
+
+====================
+     05-03-2016
+====================
+
+   * device/oneplus/oneplus2/
+557d6a3  boardconfig:uber: enable PIPE & CLANG_O3  [Martinusbe]
+00a58bc  sepolicy: fix some denials  [Martinusbe]
+   * kernel/oneplus/msm8994/
+4efeac7  include/linux/mm.h: remove ifdef condition  [Martinusbe]
+3039e94  compiler-gcc: disable -ftracer for __noclone functions  [Martinusbe]
+7b7a36d  include/linux/compiler-gcc.h: improve __visible documentation  [Martinusbe]
+f89ef3e  include/linux/compiler-gcc.h: hide assume_aligned attribute from sparse  [Martinusbe]
+5776e3e  compiler.h: add support for function attribute assume_aligned  [Martinusbe]
+3c417b5  compiler-gcc: integrate the various compiler-gcc[34567].h files  [Martinusbe]
+d1795bf  [PATCH] Fix extern inline use for gcc > 4.3 in c99 mode  [Martinusbe]
+ac25621  Add Compiler GCC-6.0  [Martinusbe]
+4084991  GCC: Add support for GCC 7.0  [Martinusbe]
+e8b054a  Merge pull request #5 from Grarak/cm-13.0  [martin coulon]
+   * manifest/
+5925859  track uber 7.0 aarch64 tc  [Martinusbe]
+
+====================
+     05-02-2016
+====================
+
+   * bionic/
+eddf7b7  bionic: Use a more simple strrchr for arm64  [Martinusbe]
+   * build/
+b86bd3d  DTC: add libvixl to x64  [Martinusbe]
+da3ab49  build: Hide gcc and clang warnings  [Martinusbe]
+   * external/libavc/
+c0dba88  Decoder: Ignore few dpb errors  [theringmaster]
+e74881f  Fix stack buffer overflow in ih264d_process_intra_mb  [theringmaster]
+   * frameworks/base/
+1e4530b  dexopt: make the logo window a lill bigger for smaller screens  [Martinusbe]
+2284697  Update PulseTile.java  [John Brewer]
+2cfa9a2  Remove dupe setting  [John Brewer]
+ba70b6c  Fix derp  [theringmaster]
+   * manifest/
+afbbcb9  external_vixl  [John Brewer]
+   * packages/apps/OmniStyle/
+2db8c64  Couple header changes  [John Brewer]
+   * packages/apps/Snap/
+a788cdd  Snap: Only set preferred preview sizes if they are valid  [Gerrit Code Review]
+35cf43e  Snap: Support override maker and model exif tag  [Ketut Putu Kumajaya]
+
+====================
+     05-01-2016
+====================
+
+   * build/
+fa1cf4f  binary: Don't run protobuf header relocations if origin/target are the same  [Martinusbe]
+f07d792  binary: Generate dummy rule for relocated protobuf headers  [Martinusbe]
+3f630d9  uber.mk: add libavcodec to graphite disabled flags  [Martinusbe]
+   * device/oneplus/bacon/
+6d4794c  Revert "bacon: Build Snap camera app"  [Martinusbe]
+   * device/oneplus/oneplus2/
+fc5f3b0  overlay: move proximity to frameworks  [Martinusbe]
+6724482  overlay: enable VariableButtonBrightness  [Martinusbe]
+   * device/oneplus/onyx/
+42de718  overlay: enable proximity  [Martinusbe]
+52a2826  overlay: disable regulatory info in about  [Martinusbe]
+42d0f1b  system.prop: ADB at boot  [Martinusbe]
+0b07ce1  onyx: Rework BT MAC Reading  [Martinusbe]
+3487e7a  onyx: Fix MIC mute issue when using Hangouts  [Martinusbe]
+b342274  onyx:system.prop: add some tweaks  [Martinusbe]
+   * frameworks/base/
+a6947aa  Pass real uid to lmkd.  [theringmaster]
+32be5ce  ZipUtils: Fix wrong timestamps when getEntryInfo  [theringmaster]
+409e0a2  SwipeHelper: Let's cut Max Excape Animation in Half too  [theringmaster]
+3b95499  Stop adjustConfigurationLw causing sleep/lock.  [theringmaster]
+1b1303e  Avoid instantiations of Boolean that are immediately unboxed.  [theringmaster]
+da556b3  sanitize niceName before doing wrap property lookup  [theringmaster]
+766881a  Handle dalvik.vm.usejitprofiles property  [theringmaster]
+6df00da  frameworks/base: Avoid Long object allocations in Long.valueOf()  [theringmaster]
+5566650  Fix needless value boxing/unboxing in Am.java  [theringmaster]
+3f217fa  Avoid strict mode warning when persisting sync state  [theringmaster]
+efa0e28  Made Element accessors thread-safe  [theringmaster]
+f8a4a15  SystemUI: remove deleted broadcast receiver  [theringmaster]
+0e56c0f  com.android.cts.appsecurity.AdoptableHostTest may trigger below dead  [theringmaster]
+31a2039  Incorrect evictor key in TokenCache  [theringmaster]
+4c2cd8b  Pulse Visualizer Sanity Level [1/3]  [theringmaster]
+db612f3  Pulse Bar Customizations [1/3]  [theringmaster]
+6c90c07  FWB:Dyanamically Configurable Pulse Bar Dimensions [1/3]  [theringmaster]
+c00bb90  FWB: Configurable Pulse Bar Spacing [1/3]  [theringmaster]
+edf2f19  QS : Pulse Tile  [theringmaster]
+782fbc6  Keyguard Charging Current Switch [1/2]  [theringmaster]
+46fd90d  FWB :SmartBar Button Tint [1/3] With Reference to Patch AICP/frameworks_base@85d97f4  [theringmaster]
+c4518de  FWB:Dyanamically Configurable Pulse Bar Dimensions [1/3] Signed-off-by: Varun Date <date.varun123@gmail.com>  [theringmaster]
+ee42e41  Add "android.permission.READ_PHONE_STATE" to manifest  [theringmaster]
+b5e4110  Keyguard: show charging current in mAh on lockscreen  [theringmaster]
+3f487d9  ThemeTile: Custom QS detail header title support for theming apps  [theringmaster]
+14fbf73  ThemesTile: Don't process clicks on current theme item  [theringmaster]
+213d682  Frameworks_base: replace 3 dots with horizontal ellipsis  [theringmaster]
+5134634  CMTE: Let's unregister a ThemeProcessingListener instead  [theringmaster]
+12f2aa1  Themes: Update icon mapping on boot Ensure icon mappings are applied on boot, otherwise themed icons will not be picked up until a theme change occurs.  [theringmaster]
+351f9b6  Fix to show inifinite resolveractivity  [theringmaster]
+51d9263  Remove duplicate assignment statement  [theringmaster]
+8460ff0  Enforce weaker grant if app is default handler for miltiple action  [theringmaster]
+7e537e0  Themes: Process applied themes before boot finishes  [theringmaster]
+c4a26cc  Themes: Fail theme install if common resources fail  [theringmaster]
+a37f751  SystemUI: Hide system/notification when config changes on kg.  [theringmaster]
+237331e  Should use scan flag, or it will not scan device.  [theringmaster]
+69cc040  aapt: Hide "No comment for public symbol" warnings  [theringmaster]
+af1b5e8  framework: Log applied theme when apps crash  [theringmaster]
+129033e  SystemUI: Move ADB_ENABLED to "Global"  [theringmaster]
+a164db9  Use CircularReveal animation to show/hide task manager panel  [theringmaster]
+   * frameworks/support/
+ed9cbb5  fix "find: `dummy': No such file or directory"  [Martinusbe]
+   * libcore/
+73dc4a5  Merge remote-tracking branch 'br/marshmallow' into mm6.0  [theringmaster]
+   * packages/apps/DUI/
+07398a6  Pulse Visualizer Sanity Level [3/3]  [theringmaster]
+e4b7633  Pulse Bar Customizations [2/3]  [theringmaster]
+7de3371  Pulse: Make Sure Visualizer Starts On Dimension Change  [theringmaster]
+743ae89  DUI:Configurable Pulse Bar Spacing [2/3]  [theringmaster]
+c57f2ef  More Pulse Bar Dimensions [1/2]  [theringmaster]
+43f0062  DUI:Dyanamically Configurable Pulse Bar Dimensions [2/3]  [theringmaster]
+b5ddc46  DUI :SmartBar Button Tint [2/3]  [theringmaster]
+90b7515  Move shortcut update boot receiver to PhoneStatusbar [2/2]  [theringmaster]
+7569c6e  DUI: Bring up "In-app search" bindable action and resources [1/2]  [theringmaster]
+c62d49e  DUI: SmartBar editor popup menu logic and animation refresh  [theringmaster]
+ee319b6  SmartBar: refresh drawables on reorient on a fresh boot/create  [theringmaster]
+   * packages/apps/Settings/
+ebde7fa  Settings: Keyguard Charging Current Switch [2/2] Signed-off-by: Varun Date <date.varun123@gmail.com>  [theringmaster]
+08e6655  Pulse customization squashed  [theringmaster]
+237b28f  Settings : SmartBar Button Tint [3/3]  [theringmaster]
+2ab285f  Settings: replace 3 dots with horizontal ellipsis  [theringmaster]
+
+====================
+     04-30-2016
+====================
+
+   * kernel/oneplus/msm8974/
+ce03e88  Merge branch 'validus/test' into mm6.0  [Martinusbe]
+   * libcore/
+2824bda  Rename ZipEntryName to ZipString  [mydongistiny]
+   * vendor/oneplus/
+d1576ac  bacon: update CAF blobs  [Martinusbe]
+
+====================
+     04-29-2016
+====================
+
+   * frameworks/base/
+bd14c07  Base: charger sounds also for wired  [airless   *]
+   * packages/apps/Snap/
+cd544e6  Automatic translation import  [Michael Bestas]
+
+====================
+     04-28-2016
+====================
+
+   * device/oneplus/oneplus2/
+7180ff5  prop: add them tweaks  [Martinusbe]
+3e49021  oneplus2:system.prop: remove ro.zygote=zygote32  [Martinusbe]
+03892b7  system.prop: adb at boot  [Martinusbe]
+68e99d9  prop: ro.qc.sdk.audio.ssr=true  [Martinusbe]
+41b1c5c  bc: disable opts for no add gomp Change-Id: I91fa2f8d25379de7f63b85c2171d41ddde41efb2 Signed-off-by: Martinusbe <martinusbe@gmail.com>  [Martinusbe]
+   * device/oppo/common/
+e434341  KeyHandler: add haptic feedback to gestures  [Martinusbe]
+   * kernel/oneplus/msm8994/
+edd0b55  ASoC: msm: qdsp6v2: Handle additional codec specific metadata  [Willi Ye]
+
+====================
+     04-27-2016
+====================
+
+   * external/sqlite/
+b07d70b  Reduce sync safety levels from 3 to 1  [Chet Kener]
+de8609f  Update SQLite to 3.12.2  [Chet Kener]
+   * hardware/libhardware/
+3d85b9b  Merge "amplifier: Fix compilation warning" into mm6.0  [Gerrit Code Review]
+
+====================
+     04-26-2016
+====================
+
+   * external/ffmpeg/
+3eca64a  libavutil: fix old style function definition warnings  [Josue Rivera]
+   * external/stagefright-plugins/
+3e2a2e8  stagefright-plugins: Fix port reset problem  [Josue Rivera]
+de0be95  stagefright-plugins: Fix eos flush problem.  [Josue Rivera]
+   * external/vixl/
+8f9c96a  VIXL Release 1.12  [mydongistiny]
+1a7bee2  VIXL Release 1.11  [mydongistiny]
+97d3ff9  VIXL Release 1.10  [mydongistiny]
+92c68f2  Build vixl as a static libary  [mydongistiny]
+   * kernel/oneplus/onyx/
+324f738  Merge pull request #2 from CyanogenMod/cm-13.0  [martin coulon]
+3e08231  timeconst.pl: Eliminate Perl warning  [Martinusbe]
+   * packages/apps/Settings/
+8b54ab3  settings: Avoid an NPE  [Martinusbe]
+
