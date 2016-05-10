@@ -17,8 +17,8 @@
                 description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
             <XDAUrl
                 id="xda"
-                title="XDA"
-                description="Visit ValidusOs onyx XDA thread">Maybe someday</XDAUrl>
+                title="OnePlus Forums"
+                description="Visit onyx thread on OnePlus Forums">https://forums.oneplus.net/threads/gzr-05-07-onyx-tipsy-tesla-validus-6-0-1_43-aospb-official.437885/</XDAUrl>
         </onyx>
         <bacon>
             <Filename>validus_bacon-6.0.1.beta.9.2-Official-20160510.zip</Filename>
