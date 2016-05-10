@@ -1,5 +1,5 @@
 #Common OTA url for all devices
-ota_url=https://raw.githubusercontent.com/ValidusOs-M/OTA_config/blob/master/ValidusOTA.xml
+ota_url=https://raw.githubusercontent.com/ValidusOs-M/OTA_config/master/ValidusOTA.xml
 release_type=Stable
 device_name=ro.product.device
  
