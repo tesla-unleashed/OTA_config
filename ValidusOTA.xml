@@ -39,7 +39,7 @@
                 title="XDA"
                 description="Visit ValidusOs bacon XDA thread">http://forum.xda-developers.com/oneplus-one/development/rom-gzroms-validus-t3006089</XDAUrl>
         </bacon>
-        <oneplus2>
+        <OnePlus2>
             <Filename>validus_oneplus2-6.0.1.beta.9.2-Official-20160509.zip</Filename>
             <RomUrl
                 id="rom"
@@ -56,8 +56,8 @@
             <XDAUrl
                 id="xda"
                 title="XDA"
-                description="Visit ValidusOs onyx XDA thread">Maybe someday</XDAUrl>
-        </oneplus2>
+                description="Visit ValidusOs OnePlus2 XDA thread">Maybe someday</XDAUrl>
+        </OnePlus2>
         <yuga>
             <Filename>validus_yuga-6.0.1.beta.9.2-Unofficial-20160507</Filename>
             <RomUrl
