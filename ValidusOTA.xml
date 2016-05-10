@@ -34,6 +34,10 @@
                 id="gapps"
                 title="Gapps"
                 description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
+            <OPUrl
+                id="op"
+                title="OnePlus Forums"
+                description="Visit GZR bacon thread on OnePlus Forums">https://forums.oneplus.net/threads/gzr-05-07-opo-tipsy-tesla-validus-6-0-1-aospb-official.442949/</OPUrl>
             <XDAUrl
                 id="xda"
                 title="XDA"
