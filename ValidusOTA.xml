@@ -120,23 +120,23 @@
                 description="Visit Validus lux thread">http://forum.xda-developers.com/moto-x-play/development/rom-validus-rom-6-0-1r30-t3361151</XDAUrl>
 	</lux>
 	</hammerhead>
-		    <Filename>validus_hammerhead-6.0.1.beta.9.2-Unofficial-20160511.zip</Filename>
-		    <RomUrl
-		    	id="rom"
-		    	title="Rom"
-		    	description="Download Latest Validus build">https://www.androidfilehost.com/?fid=24539885398392974</RomUrl>
-		    <ChangelogUrl
-		    	id="changelog"
-		    	title="Changelog"
-		    	description="View ValidusOs changelogs"></ChangelogUrl>
-		    <GappsUrl
-		    	id="gapps"
-		    	title="Gapps"
-		    	description="Download Latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
-		    <XDAUrl
-		    	id="xda"
-		    	title="XDA"
-		    	description="Visit Validus Hammerhead thread">http://forum.xda-developers.com/google-nexus-5/development/rom-validusos-m-gzr-t3376563/post66791712#post667917120</XDAUrl>
+	    <Filename>validus_hammerhead-6.0.1.beta.9.2-Unofficial-20160511.zip</Filename>
+	    <RomUrl
+	     	id="rom"
+	     	title="Rom"
+		description="Download Latest Validus build">https://www.androidfilehost.com/?fid=24539885398392974</RomUrl>
+	    <ChangelogUrl
+		id="changelog"
+		title="Changelog"
+		description="View ValidusOs changelogs"></ChangelogUrl>
+	    <GappsUrl
+		id="gapps"
+		title="Gapps"
+		description="Download Latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
+	    <XDAUrl
+		id="xda"
+		title="XDA"
+		description="Visit Validus Hammerhead thread">http://forum.xda-developers.com/google-nexus-5/development/rom-validusos-m-gzr-t3376563/post66791712#post667917120</XDAUrl>
     </Stable>
 </SlimOTA>
 
