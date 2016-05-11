@@ -80,7 +80,7 @@
                 id="xda"
                 title="XDA"
                 description="Visit Validus yuga thread">http://forum.xda-developers.com/xperia-z/development/rom-gzroms-validus-t3359448</XDAUrl>
-	</yuga>
+        </yuga>
         <dogo>
             <Filename>validus_dogo-6.0.1.beta.9.2-Unofficial-20160509</Filename>
             <RomUrl
@@ -99,8 +99,8 @@
                 id="xda"
                 title="XDA"
                 description="Visit Validus dogo thread">http://forum.xda-developers.com/xperia-zr/development/rom-validus-rom-ground-zero-roms-t3365364</XDAUrl>
-	</dogo>
-	<lux>
+        </dogo>
+        <lux>
             <Filename>validus_lux-6.0.1.beta.9.2-Official-20160509</Filename>
             <RomUrl
                 id="rom"
@@ -118,7 +118,7 @@
                 id="xda"
                 title="XDA"
                 description="Visit Validus lux thread">http://forum.xda-developers.com/moto-x-play/development/rom-validus-rom-6-0-1r30-t3361151</XDAUrl>
-	</lux>
+        </lux>
         <hammerhead>
             <Filename>validus_hammerhead-6.0.1.beta.9.2-Unofficial-20160511.zip</Filename>
             <RomUrl
