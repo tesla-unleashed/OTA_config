@@ -1,0 +1,107 @@
+====================
+     07-19-2016
+====================
+
+   * frameworks/base/
+6b6fe0f  Rollback ALIGN macros  [Prema Chand Alugu]
+   * packages/apps/InCallUI/
+43d66c0  Reduced dimensions for incall number  [Prema Chand Alugu]
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/
+307c4a1  Initial commit  [DespairFactor]
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x-uber/
+ae3c07d  Initial commit  [DespairFactor]
+   * vendor/wingtech/
+416e9f1  wt88047: Fix dark video capture  [Prema Chand Alugu]
+
+====================
+     07-18-2016
+====================
+
+   * frameworks/opt/telephony/
+95f7e76  Fix issue when two MMS requests with same priority on both SUB's  [Martinusbe]
+4fc3a75  Telephony Data: Introduce DataAllowed state  [Martinusbe]
+
+====================
+     07-17-2016
+====================
+
+
+====================
+     07-16-2016
+====================
+
+
+====================
+     07-15-2016
+====================
+
+   * kernel/cyanogen/msm8916/
+e31e938  Release Jerrica-MM-REL4.0  [Prema Chand Alugu]
+89603e5  LTR559 - define CONFIG_MACH_WT88047 locally  [Prema Chand Alugu]
+a91e892  dts: wt88047: Change LTR-559 interrupt type  [Prema Chand Alugu]
+
+====================
+     07-14-2016
+====================
+
+   * kernel/cyanogen/msm8916/
+a38241c  Ondemand proximity sensor for CM version of LTR559  [Prema Chand Alugu]
+1ef1701  input: misc: Modify LTR-559 for WT88047  [Prema Chand Alugu]
+13055d0  update defconfig  [Prema Chand Alugu]
+a2706d9  Add MSM hotplug  [Prema Chand Alugu]
+60c3201  cpufreq: add despair governor  [Prema Chand Alugu]
+f45d92b  Added fsync on/off support.  [Prema Chand Alugu]
+612e45c  Add /dev/frandom support  [Prema Chand Alugu]
+bc99dcb  wakeup: add toggles for wlan wakelocks. They are all enabled by default, it's up to the user and I provide no support if Wi-Fi stops working normally without these locks enabled. This is for advanced users  [Prema Chand Alugu]
+61b0182  int_sqrt: Improve 3x faster integer sqrt.  [Prema Chand Alugu]
+76eee55  int_sqrt: correction square root algo with naming  [Prema Chand Alugu]
+
+====================
+     07-13-2016
+====================
+   * OTA_config/
+3d5ba58  OTA 20160712 build updated for Redmi-2  [Prema Chand Alugu]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber/
+0d0e694  Initial commit  [DespairFactor]
+
+====================
+     07-12-2016
+====================
+
+   * device/wingtech/wt88047/
+c9cf248  sepolicy updates  [Prema Chand Alugu]
+   * external/sepolicy/
+e15eea6  Further restrict socket ioctls available to apps  [Martinusbe]
+67f92c3  Remove generic socket access from untrusted processes  [Martinusbe]
+   * frameworks/av/
+7cab6e8  Resolve a merge issue between lmp and lmp-mr1+  [Martinusbe]
+7007f94  MPEG4Extractor: ensure kKeyTrackID exists before creating an MPEG4Source as track.  [Martinusbe]
+4de518d  limit mediaserver memory  [Martinusbe]
+e042cf7  Fix security vulnerability in libstagefright  [Martinusbe]
+b3a24dd  h264bsdActivateParamSets: Prevent multiplication overflow.  [Martinusbe]
+8ebe471  Clear unused pointer field when sending across binder  [Martinusbe]
+3f2a007  Check section size when verifying CRC  [Martinusbe]
+   * frameworks/base/
+1ece9ce  Merge pull request #24 from TipsyOs/testing  [GitHub]
+fb11c3f  Backport of backup transport whitelist  [Martinusbe]
+fee0ff1  Backport ChooserTarget package source check from N  [Martinusbe]
+e90e8bb  Don't pass URL path and username/password to PAC scripts  [Martinusbe]
+54f1cbf  Fix missing permission check when saving pattern/password  [Martinusbe]
+   * frameworks/native/
+4745b92  Correctly handle dup() failure in Parcel::readNativeHandle  [Martinusbe]
+   * hardware/qcom/audio-caf/msm8960/
+160e843  DO NOT MERGE Fix AudioEffect reply overflow  [Nicholas Flintham]
+57cc075  hal: Remove listen calibration from 8960 hal  [Nicholas Flintham]
+   * hardware/qcom/audio-caf/msm8994/
+5654f38  DO NOT MERGE Fix AudioEffect reply overflow  [Nicholas Flintham]
+   * hardware/qcom/wlan-caf/
+a0cb1ab  wifi-hal: Only try LOWI once  [Nicholas Flintham]
+27e9bad  Wifi-HAL: Remove CLANG Warnings and errors  [Nicholas Flintham]
+25a1ce8  Revert "Opt out of clang till issues are fixed"  [Nicholas Flintham]
+87ffd57  Wifi-Hal: NAN feature enhancements  [Nicholas Flintham]
+5dafaaf  Wifi-HAL: Remove NAN_2.0 references  [Nicholas Flintham]
+   * manifest/
+561a38f  r52  [GitHub]
+   * system/extras/
+845ffba  verity: Let the tools ask for a password if needed  [Nicholas Flintham]
+
