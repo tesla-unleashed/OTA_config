@@ -20,6 +20,24 @@
                 title="XDA"
                 description="Visit TeslaM Redmi-2 XDA thread">http://forum.xda-developers.com/redmi-2/development/rom-tesla-rom-t3330248</XDAUrl>
         </wt88047>
+        <huashan>
+            <Filename>Tesla-huashan-6.0.1.RC.1.v2.2-Official-20160727.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download Tesla build">https://www.androidfilehost.com/?fid=24651429356503376</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Tesla changelogs">https://github.com/Tesla-M/OTA_config/blob/master/Changelogs/Sony/huashan/Changelog.txt</ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
+            <XDAUrl
+                id="xda"
+                title="XDA"
+                description="Visit Tesla Xperia SP XDA thread">http://forum.xda-developers.com/xperia-sp/development/rom-6-0-1r46-ubertc-4-9-gzr-tesla-v2-1-t3397692</XDAUrl>
+        </huashan>
     </Stable>
 </SlimOTA>
-
