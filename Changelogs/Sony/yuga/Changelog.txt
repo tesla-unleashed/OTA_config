@@ -1,0 +1,252 @@
+====================
+     07-31-2016
+====================
+
+
+   * build/
+cbf555f Revert "qcom: Allow usage of default QC HAL paths"
+8acb86f use `find -exec ... +` everywhere
+8f723e6 Use ulimit -p rather than prlimit.
+27e9878 make croot slightly more useful
+1971984 Make signapk align .so entries to 4096 bytes.
+8ecf3fe Clean up compiler warnings in signapk.
+906f70c If a console doesn't exist, read password from stdin.
+9cb026c Fix misc-macro-parentheses warnings.
+324bdab zipalign supports -p also when checking alignment.
+17435fc Enable -Werror on zipalign
+90873b0 Fix compilation warning.
+7576572 Use explicitly sized types in zipalign/ziptime
+dcb91c1 Fix for multirom by Vladimir
+f826400 squashed cleanups
+e7cab1e underp
+079f4bd Revert "Disable Sample APNs."
+7068741 Disable Sample APNs.
+f04e101 Revert "Remove static libraries from Jack classpath"
+c6a9e24 Revert "Remove bootclasspath handling for Jack"
+a6c5019 Revert "Speed up lunch/tapas/etc. shell utility functions."
+2774c64 Remove bootclasspath handling for Jack
+ac453c1 Remove static libraries from Jack classpath
+187ada4 fix typo in if else
+aab509f Double quote some statements for zsh compatibility
+da0ca04 Small fixes.
+d23b57a Speed up lunch/tapas/etc. shell utility functions.
+c8946ab Use sensible default locations for Java
+b167701 Remove legacy kernel build toolchain PATH setup in envsetup.sh
+432f96f Remove the unnecessary full_x86_64 and full_mips64.
+36671ea Portable way to color
+553e76b CleanSpec: Clean up $(PRODUCT_OUT)/recovery/root/sdcard.
+837f789 Add build sub   *s to .gitignore
+c1864b3 Kill some log spam
+ee9e065 build: Set ccache base to build top
+271fa05 Remove generic builds. We never build them anyway.
+1dd11ad Remove Default Combos
+69563c2 Drop PicoTTS includes
+8ef4aa6 fixes for jack
+2df10be Remove JILL, JACK_JAR and JILL_JAR
+7686714 Remove usages of jill.jar, use jack instead
+cb9e704 Always start jack server before first call to jack
+e22d481 Remove LOCAL_JACK_EXTRA_ARGS
+bfea0a3 Allow control of jack used for compilation
+767d695 Clean call-jack and its callers
+
+   * device/sony/fusion3-common/
+7cfead8 sepolicy: fix some denials
+19fc0a5 enable proximity wake
+
+   * device/sony/yuga/
+88294a2 density 440
+0394451 Refactor AAPT configs
+61320aa Tesla official
+
+   * external/sepolicy/
+9c2dd0a fix previous commit
+e1fcff0 fix bootloop causing denial, thanks to Vladimir:  E/SELinux: avc:  denied  { add } for service=overlay pid=1022 uid=1000 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_service:s0 tclass=service_manager 06-07 11:25:50.847 221-221/? E/ServiceManager: add_service('overlay',5f) uid=1000 - PERMISSION DENIED
+fb5b05c attempt to fix ps denials
+772c4f4 Changes by Vladimir
+3f61fba Further restrict socket ioctls available to apps
+675353e Remove generic socket access from untrusted processes
+6401a81 Add policy to SELinux to allow ViPER4Android in enforcing mode
+e413043 Current Never Allow rule for writing to sockets is too strict.
+
+   * frameworks/base/
+3ac93ae sensors: Rename bool for selecting what timestamp to use for orientation sensor
+5418b2c Resolve deadlock between ActivityManagerService and PowerManagerService
+90a0218 Fix deadlock in MediaSessionService during getCurrentUser()
+952fc34 MediaSession: Use mHandler for sending a pending intent
+3744e23 SystemUI: Vectorify system bar drawables
+7e16a89 SystemUI: Kill off mipmap
+559690b SystemUI: Remove xxxhdpi sysbar pngs
+7887f7d Enforce weaker grant if app is default handler for miltiple action
+6d7e1eb Parse "vendor/priv-app" to find privileged applications
+6165ea3 Take into account default app for default grants
+4a24c2f underp previous commit lazyness
+740ae03 cdRemove support of disabling Jack.
+ab30159 Fix ANDROID_LOOP=true for ArgoNavis and Perseus ringtones
+1243cba Ensure M Camera Sounds
+27e988a sounds: Use Android M Camera Sounds
+f1dd14c Revert "Fix ANDROID_LOOP=true for ArgoNavis and Perseus ringtones"
+
+   * frameworks/native/
+c70087b  fix compiler errors after last commit
+68ad612 Revert "libbinder: Return UNEXPECTED_NULL when appropriate"
+616da1e Tune dex2oat
+7b57a7e Tuning compiler thread count for optimal application install times
+354ddbb Add support for new sched kernel tracepoint
+61875a7 move init.trace.rc to frameworks/native
+185c4e0 Enable atrace to read categories from file.
+c955fb3 Tracing for binder locks/transactions
+94014b8 libbinder: Add binder::Status type
+f54e76a Use templates for write*Vector methods
+d35e57c libbinder: Return UNEXPECTED_NULL when appropriate
+77ed6c8 Add support for reading/writing a vector of binders
+93c1aad Add ipi tracing to irq tracing.
+2293dad Further reduce duplication in bugreport ps output.
+82c8735 Fix bug in byte vector serialization
+b7fc1ca Reduce duplication in bugreport ps output.
+2cda56b Add readStrongBinder that takes an interface
+7529076 libbinder: Fix out of bounds in readBoolVector
+ac29ee1 Fix build breakage due to extraneous dereference
+fd676d7 Add read/write methods for vectors
+9942588 Add methods to Parcel for bool and char and byte
+c6e922a servicemanager: log pid and uid on selinux denial
+
+   * kernel/sony/apq8064/
+ab86bd2 not used in odin
+20eb2a6 Partially Revert "Revert "dogo, odin, pollux: enable wake gestures""
+2391e33 Partially Revert "Revert "enable dt2w on dogo & odin""
+
+   * packages/apps/Settings/
+41afdfb Changes by Vladimir
+
+   * packages/apps/masquerade/
+0034e1d Merge remote-tracking branch 'nicholaschum/master'
+d7d3cc3 Uninstaller: Allow for Substratum to restart SystemUI on boolExtra
+2fb8739 Merge remote-tracking branch 'nicholaschum/master'
+
+   * vendor/tesla/
+d847bb6 Vladimir
+
+====================
+     07-30-2016
+====================
+
+
+   * packages/apps/Snap/
+6d7dfbf Snap: Unbreak auto-HDR
+75096f2 Fix orientation handling in secure camera.
+
+   * vendor/tesla/
+655bb75 extract_utils: Add support for files in rootfs
+b5257b1 slim: Remove stray echo from extract_utils
+f0b45c0 slim: Underp dumping of 64-bit only libraries
+8ca9a2a slim: Add generic tools for extract-files / setup-makefiles scripts
+
+====================
+     07-29-2016
+====================
+
+
+   * device/sony/odin/
+f06876a increase brightness at boot
+1b3fe36 twrp BoardConfig
+376e2b4 Update bluetooth config to CAF head
+d32ff1b Sony perms
+5ddf4ec du
+33ec19e Revert "odin: Use cmsdk FileUtils"
+
+   * kernel/sony/apq8064/
+6a43511 fusion3: fix odin defconfig
+
+   * packages/apps/KernelAdiutor/
+bb69289 Lighten up the actionbar a lil make swich visable
+
+   * system/netd/
+cb7029c netd: Don't build the QSAP SDK on Nexii
+
+====================
+     07-28-2016
+====================
+
+   * OTA_config/
+d6b09d5 Add huashan
+
+====================
+     07-27-2016
+====================
+
+
+   * frameworks/base/
+65b1a43 Revert "idmap: Do not unlink the file if it is locked by another process."
+5740c09 Not needed, we aren't putting overlays in sub dirs and conflicts with upstream aosp changes Revert "idmap: Fix the problems for runtime overlay."
+3171a5d ApplicationsState: add filter for Substratum overlays (1/2)
+50c4e5f Disable Zygote preloaded drawables.
+7cbdbea OMS: Fix Quick settings tiles font themes derp [6/6]
+6611d78 OMS: Add dynamic theme fonts support (Squash) [5/6]
+4aabcb3 OMS: Add dynamic theme BootAnimation support [4/6]
+32fe1f5 OMS: Allow multiple targets for enabling and disabling overlays [3/8]
+4fe9961 OMS: Persistence on boot through OverlayManagerServiceImpl [2/6]
+0343fb2 OMS: Introduce the OverlayManagerService (Squash) [1/6]
+
+   * hardware/qcom/audio-caf/msm8960/
+9cf54f4 hal: Increase deep buffer buffering
+
+   * kernel/sony/apq8064/
+94db237 fusion3: turn off impulse cpu governor
+6f7d549 f2fs: fix to update dirty page count correctly
+e382e99 ppp: take reference on channels netns
+deac973 netfilter: x_tables: check for size overflow
+6237676 ALSA: timer: Fix leak in events via snd_timer_user_tinterrupt
+80aa947 ALSA: timer: Fix leak in events via snd_timer_user_ccallback
+7ffab73 ALSA: timer: Fix leak in SNDRV_TIMER_IOCTL_PARAMS
+cf15d1d ipv4: Don't do expensive useless work during inetdev destroy.
+048274f netfilter: x_tables: fix unconditional helper
+ed4fcbc usbnet: cleanup after bind() in probe()
+6c664d1 USB: cdc-acm: more sanity checking
+828c78b fusion3: defconfig: fix warning
+1048ad4 Revert "enable dt2w on dogo & odin"
+a5514e3 Revert "dogo, odin, pollux: enable wake gestures"
+38be023 ALSA: hrtimer: Fix stall by hrtimer_cancel()
+1dcb972 pipe: limit the per-user amount of pages allocated in pipes
+1402d4f ALSA: timer: Harden slave timer list handling
+bdefe45 ALSA: timer: Fix race among timer ioctls
+c7d46f4 ALSA: timer: Fix double unlink of active_list
+c254cf6 ALSA: usb-audio: avoid freeing umidi object twice
+65eaf46 prima: Logging level changes on wlan HOST
+3499c40 3.4.112: regenerate defconfigs
+0dfb59d Linux 3.4.112 release
+95bc693 block: default sioplus
+cdf5ec8 staging: binder: add vm_fault handler
+d8b146c Restyle SIO scheduler
+19ed6a4 Whitelist f2fs in selinux
+408129d Cubic & Westwood TCP congestion control bug fixes
+395b8d7 fusion3: regenerate defconfigs
+285c9ee dogo, odin, pollux: enable wake gestures
+2fff314 fusion3: defconfig: lz4 kernel compression
+f5eef50 fusion3: don't build intelliactive cpu governor
+f36228d fusion3: enable GPU OC
+5d29945 fusion3: turn off mousedev
+9ab50ff ASoC: msm: Add flexible playback periods
+be2a859 ASoC: msm: Validate pcm buffer size
+305ccd4 msm: qdsp6: Buffer address for Record and playback is 32-byte aligned
+b1ff356 msm: vidc: Add support for Picture Order Count Type
+8db8d5b pipe: Fix buffer offset after partially failed read
+e8a7c0d fusion3 defconfig: compression: xz->gzip
+83aeee9 back to my version
+ab47ad8 Revert "selinux: Prevent init process enforcing selinux"
+3bd93fb turn off mousedev
+205be2d Update f2fs to f2fs-stable 3.4.y (2016-03-07)
+f6cc5c2 Linux 3.4.111 release
+c71cc2e UPSTREAM: proc: actually make proc_fd_permission() thread-friendly
+d1eddba UPSTREAM: proc: make proc_fd_permission() thread-friendly
+d7af2d7 net: ipc_router: fix leak of kernel memory to userspace
+df86f93 msm: null pointer dereferencing
+7b76f7b tty: Fix unsafe ldisc reference via ioctl(TIOCGETD)
+8d4f4b7 KEYS: Fix race between read and revoke
+e9d1216 fusion3: defconfigs: auto_hotplug
+
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x/
+afc0560 Initial commit
+
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x/
+f8f1020 Initial commit
+

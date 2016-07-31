@@ -39,5 +39,24 @@
                 title="XDA"
                 description="Visit Tesla Xperia SP XDA thread">http://forum.xda-developers.com/xperia-sp/development/rom-6-0-1r46-ubertc-4-9-gzr-tesla-v2-1-t3397692</XDAUrl>
         </huashan>
+        <C6603>
+            <Filename>Tesla-yuga-6.0.1.OMS.v2.3-Official-20160731-2005</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download latest Tesla build">https://www.androidfilehost.com/?fid=24591000424951273</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Tesla changelogs">https://github.com/Tesla-M/OTA_config/blob/master/Changelogs/Sony/yuga/Changelog.txt</ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
+            <XDAUrl
+                id="xda"
+                title="XDA"
+                description="Visit Tesla yuga thread">http://forum.xda-developers.com/xperia-z/development/rom-tesla-rom-official-ground-zero-roms-t3348105</XDAUrl>
+        </C6603>
     </Stable>
 </SlimOTA>
