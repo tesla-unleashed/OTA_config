@@ -1,0 +1,78 @@
+====================
+     07-31-2016
+====================
+
+
+   * packages/apps/masquerade/
+2fb8739 Merge remote-tracking branch 'nicholaschum/master'
+
+====================
+     07-30-2016
+====================
+
+
+   * packages/apps/Snap/
+6d7dfbf Snap: Unbreak auto-HDR
+
+====================
+     07-29-2016
+====================
+
+
+   * packages/apps/KernelAdiutor/
+bb69289 Lighten up the actionbar a lil make swich visable
+
+   * packages/apps/Snap/
+75096f2 Fix orientation handling in secure camera.
+
+   * system/core/
+4af1a3d healthd: Add DASH charger type
+
+   * vendor/tesla/
+655bb75 extract_utils: Add support for files in rootfs
+b5257b1 slim: Remove stray echo from extract_utils
+f0b45c0 slim: Underp dumping of 64-bit only libraries
+8ca9a2a slim: Add generic tools for extract-files / setup-makefiles scripts
+
+====================
+     07-28-2016
+====================
+
+   * OTA_config/
+d6b09d5 Add huashan
+
+   * system/netd/
+cb7029c netd: Don't build the QSAP SDK on Nexii
+
+====================
+     07-27-2016
+====================
+
+
+   * device/motorola/msm8916-common/
+2bcdcc8 msm8916-common: Use new generic extract utils
+3a8ab27 Automatic translation import
+8adeb52 Automatic translation import
+7ae5fc6 Automatic translation import
+1537efb Automatic translation import
+067fa9b Automatic translation import
+8393af4 Automatic translation import
+eba78e1 Automatic translation import
+cff50b9 Automatic translation import
+07e0979 Automatic translation import
+
+   * frameworks/base/
+65b1a43 Revert "idmap: Do not unlink the file if it is locked by another process."
+5740c09 Not needed, we aren't putting overlays in sub dirs and conflicts with upstream aosp changes Revert "idmap: Fix the problems for runtime overlay."
+3171a5d ApplicationsState: add filter for Substratum overlays (1/2)
+50c4e5f Disable Zygote preloaded drawables.
+7cbdbea OMS: Fix Quick settings tiles font themes derp [6/6]
+6611d78 OMS: Add dynamic theme fonts support (Squash) [5/6]
+4aabcb3 OMS: Add dynamic theme BootAnimation support [4/6]
+32fe1f5 OMS: Allow multiple targets for enabling and disabling overlays [3/8]
+4fe9961 OMS: Persistence on boot through OverlayManagerServiceImpl [2/6]
+0343fb2 OMS: Introduce the OverlayManagerService (Squash) [1/6]
+
+   * kernel/motorola/msm8916/
+b71eb94 ppp: defer netns reference release for ppp channel
+
