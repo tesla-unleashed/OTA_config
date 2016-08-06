@@ -1,61 +1,191 @@
 ====================
-     08-02-2016
+     08-07-2016
+====================
+
+
+   * build/
+7e4183d build: add kernel header dependency if module uses kernel headers
+b64db45 binary: Generate dummy rule for relocated protobuf headers
+5b173d6 binary: Don't run protobuf header relocations if origin/target are the same
+d714515 Avoid accidentally using the host's native 'as' command.
+0332e2a OMS: adb shell command to access OverlayManagerService
+57eab3e Updating security string to 2016-08-05 - directly to mnc-mr2-release
+0b50e45 "MOB30Z"
+093b67f "MOB30Y"
+0b25e0d "MOB30X"
+98d5cd5 "MOB30W"
+05fa686 "MOB30V"
+719ec7f MOB30U
+14c9d63 "MOB30T"
+7798e8c "MOB30S"
+85fca03 dt_image.mk: fix merge derpinage
+cef6488 build: Create a oem image when BOARD_OEMIMAGE_FILE_SYSTEM_TYPE is defined
+96952ac build: Add BOOTIMAGE_EXTRA_DEPS for BOOT_SIGNER products too
+10ef0b8 build: Use compatibility DTB directory path for custom DTB tool builds
+f0da0c0 build: Add MTK support
+434559e qcom: Allow usage of default QC HAL paths
+e494278 Preventing default locale from being overridden because of buildinfo.sh
+0bc1bc3 build: add build module from root
+6c28354 kernel: prevent targets from being rebuilt needlessly
+5ae7349 kernel: don't build modules or dtbs unless enabled
+3495870 kernel: add `make kernelxconfig' target
+fb56a81 build: e2fsck missing from emulator
+d0835be Set mcpu targets based on cpu variant.
+76533be prebuild: compress shared libraries in prebundled apks
+415a5b2 build: force .config update if additional kernel config changes
+4d3e917 kernel: Fix usage of KERNEL_ARCH
+73d780b build: Add msm8952 as a QCOM board platform
+321d906 core_minimal: Change make_f2fs to mkfs.f2fs
+79fb46e build: add msm8996 to QCOM targets
+
+   * external/sepolicy/
+b52a34c expose control over unpriv perf access to shell
+
+   * frameworks/base/
+e581e49 Add pm operation to set user restrictions.
+8afdea4 Reduce shell power over user management.
+59d9fe7 DO NOT MERGE Disable app pinning when emergency call button pressed
+7ed38c1 DO NOT MERGE Fix intent filter priorities
+85a298f Revert "idmap: Do not unlink the file if it is locked by another process."
+7b89ca3 Not needed, we aren't putting overlays in sub dirs and conflicts with upstream aosp changes Revert "idmap: Fix the problems for runtime overlay."
+e72a7bd ApplicationsState: add filter for Substratum overlays (1/2)
+e2738d4 Disable Zygote preloaded drawables.
+d0f877d OMS: Fix Quick settings tiles font themes derp [6/6]
+fd5521c OMS: Add dynamic theme fonts support (Squash) [5/6]
+8750af1 OMS: Add dynamic theme BootAnimation support [4/6]
+ac75d42 OMS: Allow multiple targets for enabling and disabling overlays [3/8]
+dcf93c9 OMS: Persistence on boot through OverlayManagerServiceImpl [2/6]
+cd53cd8 OMS: Introduce the OverlayManagerService (Squash) [1/6]
+
+   * frameworks/native/
+747d165 Add FrameStats default constructor
+fe109be sf: Fix blending mode for legacy BSP
+269c529 system_server BINDER_TYPE_FD driver ashmem accessors
+9b6c3e7 system_server BINDER_TYPE_FD sockets using ashmem accessors
+8142675 Parcel: file descriptor leak
+b48dd1d sf: Make sure HWC_BLENDING_NONE is set for opaque layer
+bc416f3 sf: Only apply hwrotation to primary displays
+35c4eb1 SurfaceFlinger : Ensure position changes are drawn with correct buffer size
+7ff5f58 surfaceflinger: Add support for Exynos BGRA mixer
+07fbb79 sensorservice: fix an invalid format string
+dc55b85 sensorservice: add power usage to dumpsys
+14f4f45 Add 3GB dalvik heap and hwui memory
+f99619d surfaceflinger: Add support for secondary color matrix
+18d8a61 Revert "DO NOT MERGE ANYWHERE Add new interface for sensor physical data"
+bfb8631 DO NOT MERGE ANYWHERE Add new interface for sensor physical data
+a911cfa surfaceflinger: Use only one EventThread when phase offsets are same.
+fcd68b4 Runtime resource overlay: support downloaded overlay packages
+
+   * manifest/
+a16c751 OMS: pull in masquerade
+a24ed8d 8996 HALs from slim
+76bf5c6 8996 HALs
+
+   * packages/apps/Settings/
+a43235c InstalledApp: show link to Google Play
+eb92350 Apps: show/hide Substratum overlays (2/2)
+
+   * vendor/tesla/
+dda4d29 extract_utils: Add support for files in rootfs
+625f55c slim: Remove stray echo from extract_utils
+ba715bf slim: Underp dumping of 64-bit only libraries
+cbec5d1 slim: Add generic tools for extract-files / setup-makefiles scripts
+10554de devices: add op3
+68f9d4b v2.3
+4c69a19 versioning: specify OMS builds
+9f8ac3c OMS: build masquerade
+
+====================
+     08-06-2016
+====================
+
+
+====================
+     08-05-2016
 ====================
 
    * OTA_config/
-0c9ac8f version_position is 4
-0e95be2 Add Lux's & Shieldtablet's Changelog
-5977c01 Add Lux & Shieldtablet
+97c1169 Add Titan, Onyx and Mako
+
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
+bad0a8f Initial commit
+
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x/
+09ab49b Initial commit
+
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-6.x/
+e584d48 Initial commit
+
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
+bd32fe1 Initial commit
+
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x/
+7263389 Initial commit
+
+====================
+     08-04-2016
+====================
+
+   * OTA_config/
+a197bba update yuga build
+7cd1d3c update yuga changelog
+
+   * frameworks/av/
+2537434 DO NOT MERGE: Camera: Adjust pointers to ANW buffers to avoid infoleak
+fec758f DO NOT MERGE omx: check buffer port before using
+1a49eea Check effect command reply size in AudioFlinger
+23b6db2 Don't use sp<>&
+dbc7702 SoftAAC2: fix crash on all-zero adts buffer
+26c7ab6 Fix potential overflow
+
+   * frameworks/opt/net/wifi/
+38e36b7 Deal correctly with short strings
+
+   * frameworks/opt/telephony/
+f6a6fa9 backport security fix: avoid set NITZ time to 2038
+
+   * manifest/
+f1b2842 6.0.1_r62
+
+   * system/core/
+e9ea4d7 add a property for controlling perf_event_paranoid
+
+====================
+     08-03-2016
+====================
+
+   * OTA_config/
+69ffe44 Redmi2 OTA
 
    * frameworks/base/
 f29efc3 cleanup things after proximity wake merge
 
+   * hardware/qcom/media-caf/msm8974/
+052ff8f DO NOT MERGE mm-video-v4l2: venc: add checks before  accessing heap pointers
+0977dcf DO NOT MERGE Fix wrong nAllocLen
+
+   * hardware/qcom/media-caf/msm8994/
+4e82dac DO NOT MERGE mm-video-v4l2: venc: add checks before  accessing heap pointers
+1c31219 DO NOT MERGE Fix wrong nAllocLen
+
+   * hardware/qcom/media/default/
+2b1ca2f DO NOT MERGE mm-video-v4l2: venc: add checks before accessing heap pointers
+c47b488 DO NOT MERGE Fix wrong nAllocLen
+
+   * packages/apps/Nfc/
+2b80f68 Allow system_server access to NFC reader mode API.
+
    * packages/apps/Settings/
 72dcda2 Fix crash when proximity wake is not enabled
 
-   * vendor/tesla/
-9a084ae Add backup services to the whitelist
-
-====================
-     08-01-2016
-====================
-
-   * OTA_config/
-3058762 yuga OTA
-
-====================
-     07-31-2016
-====================
-
-
-====================
-     07-30-2016
-====================
-
-
-   * packages/apps/KernelAdiutor/
-bb69289 Lighten up the actionbar a lil make swich visable
-
-   * system/core/
-4af1a3d healthd: Add DASH charger type
-
-====================
-     07-29-2016
-====================
-
-   * OTA_config/
-d6b09d5 Add huashan
-
-   * frameworks/base/
-8517361 Merge pull request #2 from csolanol/mm6.0
-05cfe6a base: Fix proximity check on non power key
-2229cba [1/2] frameworks_base: Add ProximityWake
-
-   * packages/apps/Settings/
-2c6e02e Merge pull request #3 from csolanol/mm6.0
-b22f61c Move prevent wake switch to wakeup section
-e9e6202 [2/2] Settings: Add ProximityWake
-
-   * system/netd/
-cb7029c netd: Don't build the QSAP SDK on Nexii
+   * packages/apps/masquerade/
+3aae3c5 Update Travis-CI badge for TeamSubstratum Repo
+be8c613 Merge remote-tracking branch 'nicholaschum/master'
+0a18bd0 Let's get versioning working when building through AOSP
+9c23216 Merge remote-tracking branch 'nicholaschum/master'
+63f9659 Bump the version up to 14
+eb94b9c Merge remote-tracking branch 'nicholaschum/master'
+2d883d3 Remove traces of MainActivity and Launcher Icon
+4edfca5 Merge pull request #4 from beanstown106/master
+697d376 Lets hide masquerade
 
