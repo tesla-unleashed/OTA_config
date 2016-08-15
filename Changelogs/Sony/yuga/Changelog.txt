@@ -1,286 +1,80 @@
 ====================
-     08-03-2016
+     08-15-2016
 ====================
 
-
-   * build/
-b3233a2 try NDK 5.x
-7c1f08c disable unpriv perf by default in user{,debug} builds
-29b96b3 "MOB30Z"
-a985283 "MOB30Y"
-4e20fae "MOB30X"
-419aea9 "MOB30W"
-389b4ac "MOB30V"
-b6bcc5e MOB30U
-75786fc "MOB30T"
-4a5caeb "MOB30S"
-34a430a Updating security string to 2016-08-05 - directly to mnc-mr2-release
-
-   * external/sepolicy/
-cc383ee expose control over unpriv perf access to shell
-967c937 sepolicy: Add policy for sdcardfs and configfs
-
-   * frameworks/av/
-26009f1 DO NOT MERGE: Camera: Adjust pointers to ANW buffers to avoid infoleak
-27e66d1 DO NOT MERGE omx: check buffer port before using
-b8c3e8f Check effect command reply size in AudioFlinger
-d61b296 Don't use sp<>&
-526f17c SoftAAC2: fix crash on all-zero adts buffer
-1956512 Fix potential overflow
-
-   * frameworks/base/
-02da735 cleanup things after proximity wake merge
-8f54a08 base: Fix proximity check on non power key
-8bfbffd [1/2] frameworks_base: Add ProximityWake
-74348ae power: Disable keyboard/button lights while dozing/dreaming
-2e42985 Add pm operation to set user restrictions.
-8229c8e Reduce shell power over user management.
-b7c032f DO NOT MERGE Disable app pinning when emergency call button pressed
-e39fca9 DO NOT MERGE Fix intent filter priorities
-
-   * frameworks/native/
-66ebdba Add FrameStats default constructor
-
-   * frameworks/opt/net/wifi/
-9306d5b Deal correctly with short strings
-
-   * frameworks/opt/telephony/
-36d7de2 backport security fix: avoid set NITZ time to 2038
-9cbb543 Define telephony resources as a coreApp
-
-   * hardware/qcom/media-caf/msm8974/
-052ff8f DO NOT MERGE mm-video-v4l2: venc: add checks before  accessing heap pointers
-0977dcf DO NOT MERGE Fix wrong nAllocLen
-
-   * hardware/qcom/media-caf/msm8994/
-4e82dac DO NOT MERGE mm-video-v4l2: venc: add checks before  accessing heap pointers
-1c31219 DO NOT MERGE Fix wrong nAllocLen
-
-   * kernel/sony/apq8064/
-3e56dc4 fusion3: regenerate defconfigs
-7c665a4 update f2fs to latest
-
-   * manifest/
-90515da r61
-
-   * packages/apps/Settings/
-62e22ae Fix crash when proximity wake is not enabled
-5693ab1 Move prevent wake switch to wakeup section
-a5b4e9f [2/2] Settings: Add ProximityWake
-
-   * system/core/
-dffe2ae add a property for controlling perf_event_paranoid
-1e1f6b4 sdcard: Fix sdcardFS check
-96f9e46 sdcard: Add support for sdcardfs!
-8af55a0 healthd: Add DASH charger type
-
-   * vendor/tesla/
-e95e329 sepolicy: Let the IO prefetcher look at sdcardfs
-0b8e6a6 sepolicy: Revert custom sdcardfs policy in favor of AOSP
-673e67a sepolicy: A few more denials
-0febf72 sepolicy: Add rule to allow sdcardfs to read package list
-1323eae sepolicy: Add sdcardfs support
-
-====================
-     08-02-2016
-====================
-
-   * OTA_config/
-69ffe44 Redmi2 OTA
-0c9ac8f version_position is 4
-
-   * bootable/recovery/
-786d734 Remove curtainClose() remnants
-25036b7 Remove unused identifier from NotifyTouch
-76b8afc Move cursor after appending date to backup name
-8323ab5 gui: fix Enter key in terminal
 
    * device/sony/fusion3-common/
-4eb570c sepolicy: fix some denials
-80463d7 enable proximity wake
+7d2ce72 update WCNSS_qcom_cfg.ini
 
-   * device/sony/yuga/
-e835e40 lcd density 440
-9b69cd3 Refactor AAPT configs
-8a0e537 Tesla official
+   * kernel/sony/apq8064/
+8936d8e gpu: ion: return error code when iommu map fails
+f122719 msm: kgsl: Do not detect faults when GPU core is idle
+d7ab6aa msm: kgsl: Fix Z180 memory leak
+7557047 msm: kgsl: Increase the wait timeout for context detachment
+8867a12 power: pm8921-charger: Remove the unplug userspace blocking event
 
-   * packages/apps/masquerade/
-3aae3c5 Update Travis-CI badge for TeamSubstratum Repo
-be8c613 Merge remote-tracking branch 'nicholaschum/master'
-0a18bd0 Let's get versioning working when building through AOSP
-9c23216 Merge remote-tracking branch 'nicholaschum/master'
-63f9659 Bump the version up to 14
-eb94b9c Merge remote-tracking branch 'nicholaschum/master'
-2d883d3 Remove traces of MainActivity and Launcher Icon
-4edfca5 Merge pull request #4 from beanstown106/master
-697d376 Lets hide masquerade
+   * packages/apps/Snap/
+1532d76 Automatic translation import
 
-   * vendor/tesla/
-f8c6426 Add backup services to the whitelist
-11f1699 add time to postfix
+   * vendor/sony/
+1364435 fusion3: update blobs
 
 ====================
-     08-01-2016
+     08-14-2016
+====================
+
+
+   * packages/apps/Snap/
+2781c8e Snap: String improvements
+
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x/
+fafc797 Initial commit
+
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x/
+fd40716 Initial commit
+
+====================
+     08-13-2016
 ====================
 
    * OTA_config/
-0e95be2 Add Lux's & Shieldtablet's Changelog
-5977c01 Add Lux & Shieldtablet
-3058762 yuga OTA
+300711e change gapps again
+
+   * system/bt/
+2f3a2e0 DO NOT MERGE Fix potential DoS caused by delivering signal to BT process
+
+   * system/extras/
+9238cf5 Revert "verity: Split the signer arguments correctly"
+
+   * system/vold/
+c5a33c9 Revert "vold: Allow reset after shutdown"
+
+====================
+     08-12-2016
+====================
+
 
    * bootable/recovery/
-ce8f83c ADB: Add adb backup for TWRP.
-
-   * build/
-48d77eb rebloat some
-cbf555f Revert "qcom: Allow usage of default QC HAL paths"
-8acb86f use `find -exec ... +` everywhere
-8f723e6 Use ulimit -p rather than prlimit.
-27e9878 make croot slightly more useful
-1971984 Make signapk align .so entries to 4096 bytes.
-8ecf3fe Clean up compiler warnings in signapk.
-906f70c If a console doesn't exist, read password from stdin.
-9cb026c Fix misc-macro-parentheses warnings.
-324bdab zipalign supports -p also when checking alignment.
-17435fc Enable -Werror on zipalign
-90873b0 Fix compilation warning.
-7576572 Use explicitly sized types in zipalign/ziptime
-dcb91c1 Fix for multirom by Vladimir
-f826400 squashed cleanups
-e7cab1e underp
-079f4bd Revert "Disable Sample APNs."
-7068741 Disable Sample APNs.
-f04e101 Revert "Remove static libraries from Jack classpath"
-c6a9e24 Revert "Remove bootclasspath handling for Jack"
-a6c5019 Revert "Speed up lunch/tapas/etc. shell utility functions."
-2774c64 Remove bootclasspath handling for Jack
-ac453c1 Remove static libraries from Jack classpath
-187ada4 fix typo in if else
-aab509f Double quote some statements for zsh compatibility
-da0ca04 Small fixes.
-d23b57a Speed up lunch/tapas/etc. shell utility functions.
-c8946ab Use sensible default locations for Java
-b167701 Remove legacy kernel build toolchain PATH setup in envsetup.sh
-432f96f Remove the unnecessary full_x86_64 and full_mips64.
-36671ea Portable way to color
-553e76b CleanSpec: Clean up $(PRODUCT_OUT)/recovery/root/sdcard.
-837f789 Add build sub   *s to .gitignore
-c1864b3 Kill some log spam
-ee9e065 build: Set ccache base to build top
-271fa05 Remove generic builds. We never build them anyway.
-1dd11ad Remove Default Combos
-69563c2 Drop PicoTTS includes
-8ef4aa6 fixes for jack
-2df10be Remove JILL, JACK_JAR and JILL_JAR
-7686714 Remove usages of jill.jar, use jack instead
-cb9e704 Always start jack server before first call to jack
-e22d481 Remove LOCAL_JACK_EXTRA_ARGS
-bfea0a3 Allow control of jack used for compilation
-767d695 Clean call-jack and its callers
-
-   * external/sepolicy/
-9c2dd0a fix previous commit
-e1fcff0 fix bootloop causing denial, thanks to Vladimir:  E/SELinux: avc:  denied  { add } for service=overlay pid=1022 uid=1000 scontext=u:r:system_server:s0 tcontext=u:object_r:default_android_service:s0 tclass=service_manager 06-07 11:25:50.847 221-221/? E/ServiceManager: add_service('overlay',5f) uid=1000 - PERMISSION DENIED
-fb5b05c attempt to fix ps denials
-772c4f4 Changes by Vladimir
-3f61fba Further restrict socket ioctls available to apps
-675353e Remove generic socket access from untrusted processes
-6401a81 Add policy to SELinux to allow ViPER4Android in enforcing mode
-e413043 Current Never Allow rule for writing to sockets is too strict.
-
-   * frameworks/base/
-3ac93ae sensors: Rename bool for selecting what timestamp to use for orientation sensor
-5418b2c Resolve deadlock between ActivityManagerService and PowerManagerService
-90a0218 Fix deadlock in MediaSessionService during getCurrentUser()
-952fc34 MediaSession: Use mHandler for sending a pending intent
-3744e23 SystemUI: Vectorify system bar drawables
-7e16a89 SystemUI: Kill off mipmap
-559690b SystemUI: Remove xxxhdpi sysbar pngs
-7887f7d Enforce weaker grant if app is default handler for miltiple action
-6d7e1eb Parse "vendor/priv-app" to find privileged applications
-6165ea3 Take into account default app for default grants
-4a24c2f underp previous commit lazyness
-740ae03 cdRemove support of disabling Jack.
-ab30159 Fix ANDROID_LOOP=true for ArgoNavis and Perseus ringtones
-1243cba Ensure M Camera Sounds
-27e988a sounds: Use Android M Camera Sounds
-f1dd14c Revert "Fix ANDROID_LOOP=true for ArgoNavis and Perseus ringtones"
-
-   * frameworks/native/
-c70087b  fix compiler errors after last commit
-68ad612 Revert "libbinder: Return UNEXPECTED_NULL when appropriate"
-616da1e Tune dex2oat
-7b57a7e Tuning compiler thread count for optimal application install times
-354ddbb Add support for new sched kernel tracepoint
-61875a7 move init.trace.rc to frameworks/native
-185c4e0 Enable atrace to read categories from file.
-c955fb3 Tracing for binder locks/transactions
-94014b8 libbinder: Add binder::Status type
-f54e76a Use templates for write*Vector methods
-d35e57c libbinder: Return UNEXPECTED_NULL when appropriate
-77ed6c8 Add support for reading/writing a vector of binders
-93c1aad Add ipi tracing to irq tracing.
-2293dad Further reduce duplication in bugreport ps output.
-82c8735 Fix bug in byte vector serialization
-b7fc1ca Reduce duplication in bugreport ps output.
-2cda56b Add readStrongBinder that takes an interface
-7529076 libbinder: Fix out of bounds in readBoolVector
-ac29ee1 Fix build breakage due to extraneous dereference
-fd676d7 Add read/write methods for vectors
-9942588 Add methods to Parcel for bool and char and byte
-c6e922a servicemanager: log pid and uid on selinux denial
-
-   * kernel/sony/apq8064/
-72cbdc4 ASoC: msm: Fixup flexible period patches
-
-   * packages/apps/Settings/
-41afdfb Changes by Vladimir
-
-   * packages/apps/masquerade/
-0034e1d Merge remote-tracking branch 'nicholaschum/master'
-d7d3cc3 Uninstaller: Allow for Substratum to restart SystemUI on boolExtra
-
-   * vendor/tesla/
-d847bb6 Vladimir
-
-====================
-     07-31-2016
-====================
-
-
-   * kernel/sony/apq8064/
-ab86bd2 not used in odin
-20eb2a6 Partially Revert "Revert "dogo, odin, pollux: enable wake gestures""
-2391e33 Partially Revert "Revert "enable dt2w on dogo & odin""
+64dbd0d Make input whitelist and blacklist work for mouse devices too
 
    * packages/apps/Snap/
-6d7dfbf Snap: Unbreak auto-HDR
-
-   * packages/apps/masquerade/
-2fb8739 Merge remote-tracking branch 'nicholaschum/master'
+e095785 Snap: Support 9.6 MP 16:9 picture resolution
 
 ====================
-     07-30-2016
+     08-11-2016
 ====================
 
 
-   * device/sony/odin/
-f06876a increase brightness at boot
-1b3fe36 twrp BoardConfig
-376e2b4 Update bluetooth config to CAF head
-d32ff1b Sony perms
-5ddf4ec du
-33ec19e Revert "odin: Use cmsdk FileUtils"
+   * bootable/recovery/
+ad05c6d recovery: allow usage of TARGET_CRYPTFS_HW_PATH
 
-   * kernel/sony/apq8064/
-6a43511 fusion3: fix odin defconfig
+   * hardware/qcom/media-caf/msm8996/
+091ce62 Merge "media: Avoid collision with FFMPEG plugin" into mm6.0-caf-8996
+03dbc0c Merge changes I27d02331,Id410e324,I91e61e93,I8ae55d93,I92f66baf, ... into mm6.0-caf-8996
+
+   * packages/apps/Browser/
+c29c3d4 Automatic translation import
 
    * packages/apps/Snap/
-75096f2 Fix orientation handling in secure camera.
-
-   * vendor/tesla/
-655bb75 extract_utils: Add support for files in rootfs
-b5257b1 slim: Remove stray echo from extract_utils
-f0b45c0 slim: Underp dumping of 64-bit only libraries
-8ca9a2a slim: Add generic tools for extract-files / setup-makefiles scripts
+2b5331e Snap: Remove storage menu if no external storage available
 
