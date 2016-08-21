@@ -171,5 +171,20 @@
                 title="Gapps"
                 description="Download latest Banks gapps">http://download.dirtyunicorns.com/files/gapps/Banks</GappsUrl>
         </falcon>
+        <OnePlus3>
+            <Filename>Tesla-oneplus3-6.0.1.OMS.v2.3-Official-20160819.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download Tesla build">https://www.androidfilehost.com/?w=files&amp;flid=79265</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Tesla changelogs">https://github.com/Tesla-M/OTA_config/blob/master/Changelogs/OnePlus/oneplus3/Changelog.txt</ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
+        </OnePlus3>
     </Stable>
 </SlimOTA>
