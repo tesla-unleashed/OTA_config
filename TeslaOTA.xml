@@ -97,7 +97,7 @@
                 description="Visit Tesla shieldtablet thread">http://forum.xda-developers.com/shield-tablet/development/rom-tesla-6-0-1r46-t3410432</XDAUrl>
         </shieldtablet>
         <titan>
-            <Filename>Tesla-titan-6.0.1.OMS.v2.3-OFFICIAL-20160804.zip</Filename>
+            <Filename>Tesla-titan-6.0.1.OMS.v2.3-OFFICIAL-20160822.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -112,7 +112,7 @@
                 description="Download latest Banks gapps">http://downloads.hostingsharedbox.com/nathanchance/GApps/banks_dynamic_gapps-6.x.x-20160730.zip</GappsUrl>
         </titan>
         <mako>
-            <Filename>Tesla-mako-6.0.1.OMS.v2.3-OFFICIAL-20160804.zip</Filename>
+            <Filename>Tesla-mako-6.0.1.OMS.v2.3-OFFICIAL-20160822.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
