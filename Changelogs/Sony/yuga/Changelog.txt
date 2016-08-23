@@ -1,80 +1,168 @@
 ====================
-     08-15-2016
+     08-23-2016
 ====================
 
 
-   * device/sony/fusion3-common/
-7d2ce72 update WCNSS_qcom_cfg.ini
+   * bootable/recovery/
+6c28ee8 NTFS-3g: migrate to PLATFORM_SDK check instead
+61c7c5c Gui: replace pow() function
+3126a11 wait for cryptfs device node to come up
+0e2140e Add git revision to startup message in recovery.log
+
+   * build/
+8a0313e switch flashing of kernel and SuperSU
+385d508 dtc 08/2016 exclude
+
+   * device/sony/common/
+accd33d init: Clean the init_sony specific binaries on boot
+98b8a4c init: Use a more conventional ramdisk layout
+
+   * device/sony/yuga/
+e1cbffc disable all optimizations
+
+   * frameworks/base/
+d5f4ce1 Hotspot: add config to save passpoint on/off state
+fa29ea2 Hotspot: customize hotspot for specific carriers
+4e05513 Add enabled pre-installed carrier apps
+696c1f7 forgot one
+11b9ab7 missing a wifi string
+4b48544 framework: add "Turn wifi off" string
+f59a40d Make WIFI_IDLE_MS default into an overlay
+15c0bd9 Wi-Fi: Introduce state variable to signify Wi-Fi turn on Fail
+8703a71 IMS: Fix video call forwarding options issue
+29b749d Don't trust callers to supply app info to bindBackupAgent()
+efa2003 connectivity: Configure additional TCP parameters
+7fcd053 wifi: Framework support for Ad-Hoc WiFi (IBSS mode)
+7376b20 aidl: Support for duplicate methods having different arguments
+0186322 telephony: Add compatibility version of registrationConnected()
+1b34602 Remove TONE_SUPERVISORY_CH
+8b72d10 Ignore IMS type APN when notify data connection
+4584717 Associate connected APN list with subscription
+c1a82e6 combo bug when location reported by providers do not come with extras
+0e3f3b1 Wifi: Make maximum selective channel scans and interval configurable
+6bcd05c WifiDisplayController: Fix p2p disconnect before rtsp teardown completes
+fef47d3 Bluetooth: Access mediaplayerlist in synchronized way
+e4d3a35 Encapsulate the unbindService with try catch block
+e55957b Add absent sim info to locked screen text
+995e479 BT: Set persiste Bluetooth State during enable timeout case
+092433f Avoid wrongly reported SIM PIN mismatch.
+845aaeb Add config to show HD icon on EVS codec.
+d8ee9d2 OMS: Themes should be dynamically theming the power menu
+6c269d6 AudioService: Allow system effect sounds to be themed
 
    * kernel/sony/apq8064/
-8936d8e gpu: ion: return error code when iommu map fails
-f122719 msm: kgsl: Do not detect faults when GPU core is idle
-d7ab6aa msm: kgsl: Fix Z180 memory leak
-7557047 msm: kgsl: Increase the wait timeout for context detachment
-8867a12 power: pm8921-charger: Remove the unplug userspace blocking event
+02274fe msm: clock: Fix potential NULL pointer dereference
 
-   * packages/apps/Snap/
-1532d76 Automatic translation import
+   * packages/services/Telecomm/
+b3f66d9 Remove TONE_SUPERVISORY_CH
 
-   * vendor/sony/
-1364435 fusion3: update blobs
+   * packages/services/Telephony/
+166d36a PhoneApp Crash: Multiple times due to permission issue
+0cee337 Use correct theme for USSD dialog.
 
-====================
-     08-14-2016
-====================
-
-
-   * packages/apps/Snap/
-2781c8e Snap: String improvements
-
-   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x/
-fafc797 Initial commit
-
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x/
-fd40716 Initial commit
+   * vendor/tesla/
+6df5117 SuperSU 2.76
 
 ====================
-     08-13-2016
+     08-22-2016
 ====================
 
    * OTA_config/
-300711e change gapps again
+cd6a7da Update Titan and Mako
 
-   * system/bt/
-2f3a2e0 DO NOT MERGE Fix potential DoS caused by delivering signal to BT process
-
-   * system/extras/
-9238cf5 Revert "verity: Split the signer arguments correctly"
-
-   * system/vold/
-c5a33c9 Revert "vold: Allow reset after shutdown"
+   * packages/apps/Snap/
+92009be SnapdragonCamera: Fix first-time crash and cleanup permissions
+7ed0766 Snap: Fix bad merge of "Fixed M permission issue"
 
 ====================
-     08-12-2016
+     08-21-2016
+====================
+
+   * OTA_config/
+277b52e add op3
+
+   * packages/apps/Snap/
+46a8831 Snap: Make developer menu more accessible
+
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x/
+8a52eaa Initial commit
+
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x/
+2bb74c9 Initial commit
+
+====================
+     08-20-2016
 ====================
 
 
    * bootable/recovery/
-64dbd0d Make input whitelist and blacklist work for mouse devices too
-
-   * packages/apps/Snap/
-e095785 Snap: Support 9.6 MP 16:9 picture resolution
+908dd25 GUI: Use standard routine for auto-reboot
+8dc25b7 Fixup reboot after install variables
+9a2a205 GUI: Add countdown & cancel to install auto-reboot
+bfccfb8 Finish creating disable_free_space_check variable
+9fa76ba Allow running of a custom script after factory reset
+4a71d4f Add build flag for forcing single buffer mode
 
 ====================
-     08-11-2016
+     08-19-2016
 ====================
 
+   * OTA_config/
+e634294 Add osprey & falcon
 
-   * bootable/recovery/
-ad05c6d recovery: allow usage of TARGET_CRYPTFS_HW_PATH
+   * frameworks/opt/net/ims/
+5527ca8 Volte: add volte feature system property and api's.
+f6b7f5c IMS: Enhanced 4G LTE mode is turning off IMS.
+7d2e553 IMS: Set the correct reason code for merged call
+884c7bd ims: Add backwards compatibility for registrationConnected/Progressing
 
-   * hardware/qcom/media-caf/msm8996/
-091ce62 Merge "media: Avoid collision with FFMPEG plugin" into mm6.0-caf-8996
-03dbc0c Merge changes I27d02331,Id410e324,I91e61e93,I8ae55d93,I92f66baf, ... into mm6.0-caf-8996
-
-   * packages/apps/Browser/
-c29c3d4 Automatic translation import
+   * frameworks/opt/telephony/
+4cbfd8c Add support for permanently enabled carrier apps
+12ea379 Fix default data reset issue on device powerup
+75d663d DCT: Tear down MMS+default connections raised by config_enable_mms_with_mobile_data_off
+7764d90 Fix Ims pdn deactivate due to single pdn arbitration
+3da2594 Fix pdn cleanup issue due to apn change
+5021161 Fix ims pdn issue on non dds sub on iwlan
+1efe213 Fix Dds switch issue for wifi and IWLAN scenarios
+f4474c7 Reset internet requests when SIM is removed
+a2da8f0 Define telephony resources as a coreApp
+235c2af Telephony Data: Introduce DataAllowed state
+8c5d87e dct: Sync with upstream
+32ee7c2 MSIM: Send FINISH request on flex map START fail
+b8da3f4 Set additional info for LaunchBrowser error case.
+ed79a35 Telephony: Reduce back to back same APN activation delay.
+eb4457c Fix emergency ims pdn setup issue
+811a1ef Fix ims pdn issue on non dds sub on iwlan
+acd16a4 Fix to resolve data call issue for sim hot swap case
+5609ddb Notify disconnect on phone dispose
+793bfbc Use EVS codec for HD if carrier supports it.
+00ba57e Fix Dds switch issue for wifi and IWLAN scenarios
+ba090eb Fix to avoid unnecessary PS attach.
+158d010 Fix ims pdn request issue
+4de5cf3 Parse the record number from byte to int
+4cb2325 Finer grained character boundaries in computing SMS fragment lengths
+1dad69d MSIM: Use SIM specific subId for setMccMnc
+0ad9824 IMS: Fix phone app crash at setOutgoingCallerIdDisplay().
+b137f31 Fix DDS switch issues for CDMA and IWLAN scenarios.
+cbf2d15 Add the slot id when broadcasting card state to STK app.
+f601d10 Fix default data reset issue on device powerup
+8cef783 Send shutdown command to modem
+8c6e9b5 Telephony: CDMA: allow MT SMS when in ECBM
+99e13cf IMS: Exit ECBM before dialing a pending non-emergency MO call
+6fc6abf IMS: Fix null pointer exception for call forwarding
+350c633 Setup data on new APNs only when APN changes
+1adfadb gsmsst: Protect against "null" string literals
+5e9d6af Remove identifier that causes warnings under OpenJDK 8 compiler
+1bd52e9 For NV-based devices like CDMA only devices, ignore ICC Card status change EVENT.
 
    * packages/apps/Snap/
-2b5331e Snap: Remove storage menu if no external storage available
+6304f00 SnapdragonCamera: Force removing preview cover for camcorder
+a780bd9 SnapdragonCamera: Fix NPE caused by empty permission result
+f41b627 snap: Change to target SDK 23
+7d7a688 SnapdragonCamera: Remove custom location permission request window
+219fbf4 Minimum viable Android M runtime permissions handling for H.
+db4f534 SnapdragonCamera: Force removing preview cover
+
+   * packages/providers/TelephonyProvider/
+a73a364 Fix apn restore issue for multi-sim
 
