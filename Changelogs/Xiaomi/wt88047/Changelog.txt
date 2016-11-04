@@ -1,0 +1,231 @@
+====================
+     11-05-2016
+====================
+
+   * OTA_config/
+2166eff start over with TeslaN
+
+   * build/
+38cd183 Changelog in settings (3)
+
+   * device/wingtech/wt88047/
+ad145fe explicit ro.product.device=wt88047
+
+   * frameworks/av/
+8a4d2a8 camera/media: Support for legacy camera HALv1
+0cb2d34 CameraService: Notify flashlight about device close
+a339184 Camera service: Trust telephony service to forward client UIDs.
+2ff1c88 Revert "av: Add support for CameraSource as metadata type"
+
+   * frameworks/base/
+86613d5 Optional screenshot type [1/2]
+8095a7b Revert "Move weather down to header"
+015d44b Move weather down to header
+7d1271a Add a timer to screen record
+94df779 Save screenrecord in "Screenrecords" directory
+a1dbdc6 screen record: make sure to always delete tmp files
+8726aea Screen Recording: forward port from 4.4
+3ab93d1 bring back screen record shortcut
+
+   * hardware/qcom/media-caf/msm8974/
+cdbf224 mm-video-v4l2: venc: update metadata-type used for HAL1 based recording
+
+   * packages/apps/Eleven/
+afdb6bc Fix MediaSession queue handling.
+272271f Eleven: Simplify MediaSession queue processing
+
+   * packages/apps/PackageInstaller/
+48bd0e6 Fix PackageInstaller FC when tapping on a downloaded apk notification
+
+   * packages/apps/Settings/
+05fa97f fix TeslaAbout.java for nougat
+cf59d9a A cold with some code = what just happened
+bdb31ea About Tesla Section
+4ca8228 Changelog in settings(1)
+697968a Add TeslaOTA
+
+   * packages/apps/Snap/
+51d5e54 Merge remote-tracking branch 'cm/cm-14.0' into n7.0
+
+   * packages/apps/TeslaCoil/
+fb8f25c Optional screenshot type [2/2]
+
+   * vendor/tesla/
+205b5a5 Build OTA app
+
+====================
+     11-04-2016
+====================
+
+
+   * bionic/
+3cd8ab7 Merge tag 'android-7.1.0_r4' into n7.0-caf
+de6aec4 Revert "bionic: Registration of trapping calls during libc initialization"
+32841d3 linker: load shims prior to dt_needed check
+8bd5584 Revert "bionic: Allow devices to add device specfic static libs"
+2a9193b bionic: fix scorpion architecture
+37488df linker: Make platform text relocations denial optional
+1b73e3f libc: allow forcing compilation with gcc
+791c0e6 bionic: Use a more simple strrchr for arm64
+7525f17 libc: AArch64: Tune memcpy
+5c54d3a libc: ARM64: add assembly strrchr
+21b6ff4 libc: ARM64: improve performance in strlen
+564e388 libc: ARM64: optimize memset.
+8888772 libc: ARM64: Optimize memcpy.
+5aec606 libc: ARM64: remove bcopy from memset
+9a1b9c1 libc: arm: add optimized memchr implementation
+4e3795a libc: Add Scorpion-optimized variant
+d8acafe Revert "linker: Avoid logcat spam in QCOM A-Family"
+
+   * build/
+d42fce8 Fix a race condition while building the recovery patch (needed for msm8226)
+b91fbff ninja: increase maximum suffix length
+a4958c0 Add LOCAL_AIDL_FLAGS
+45ed79b Show complete command with args when ComputePatch fails
+9f9f633 ninja: use host's ninja if it exists
+c8e9230 build: Allow both OpenJDK and OracleJDK by default
+0e85378 build: use the system's ccache by default
+
+   * device/wingtech/wt88047/
+dc23860 sick of camera hal1, disable for now
+
+   * frameworks/av/
+b3d90dc MediaProfiles: Enhance profiles for extended usecases
+90e13d3 av: Add support for CameraSource as metadata type
+
+   * frameworks/base/
+a9255d6 few fixes
+06aa1a6 Merge branch 'testing' of https://github.com/TeslaRom-N/frameworks_base into HEAD
+b5dce20 sysui: Use pixel navbar icons
+0108db0 frameworks: Toast long timeout fix
+b770f0a sysui: New google pixel colors
+a5b24cc base: New google pixel colors
+aa78c66 Fix Google Calendar FC
+25aa799 Fix race condition when writing UidState of appops.
+ae3f7b2 Fix NPE from AppOpsManager.checkPackage.
+7ad0190 webview_packages: correct signature definition for Chrome Stable
+97c41e0 [ActivityManager] Reset killed flag at attachApplicationLocked
+03fae03 Clear pending activity launches when force stop package
+5fe834b [ActivityManager] Fix the inconsistence between ProcessRecord and BroadcastQueues
+00e8f7d Fix to NullPointerException when activity is relaunched
+a688891 Let's cut Max Excape Animation in Half
+a86a0d0 Change night mode icons to match DU Tweaks setting
+89c45ed Clean up the tuner service/activity
+6d4009b Fix the Night mode on/off switch
+46535cf Don't check tuner availability to allow night mode
+dc1284e Remove unnecessary videos
+aecd090 Delete media tests
+a0df602 Fix NativeDaemonConnectorException issue accessing null object
+4b4552b [DownloadManager] Enqueue download request might fail and cause NullPointerException
+3b6a505 PowerManager: don't pass NULL pointers to power HAL
+80b5f97 frameworks: Fix keyboard layout notification missing issue
+700eef4 Fix DismissView cannot be clicked sometimes after boot
+35afe11 [AssetManager]:Fix thread race caused double free issue.
+fa5c9a4 Fix WallpaperManager APIs
+bc8529d Fix window animation flash issue
+f6f3fdd Change toast frames color to some better look ones
+0f7d6e6 Allow statusbar items to be launch without the jank [1/2]
+
+   * packages/apps/Settings/
+40fc61c Try some pixel colors
+ca9919d Move App Ops to Main Settings
+0c0c913 settings: Fix viewpager tabs not showing on AppOpsSummary
+8a49b24 Return App Ops (bug - without tabs)
+
+   * packages/apps/Snap/
+029226f Revert "temp: disable hwkeys"
+0ce2bbc Allow to use power key as shutter
+d86244c snap: Provide a way to remove Snap from the build
+
+   * packages/apps/TeslaCoil/
+64e8ce8 switch to color accent for better theming
+0b0f6c9 Fix derps try a few pixel color changes
+83f864c Squash: Move tuner to TeslaCoil
+
+====================
+     11-03-2016
+====================
+
+
+   * device/wingtech/wt88047/
+90cd8db disable volte overlay
+ba6c5d6 remove ims deamons
+ca90cdd Don't make ims-ext-common and ims
+263b704 Remove ims
+
+   * frameworks/base/
+cbf5e43 camera: Tolerate errors in getHorizontal/VerticalViewAngle
+9e7f430 Custom Carrier Label & Carrier Label Placement [1/2] [Squashed] Squash Of: Keyguard/Statusbar Carrier label options [1/2] * Stock behavior(only on keyguard), only on statusbar,both disabled or both enabled * code originally writted by @Altaf-Mahdi i just squased into one commit PureNexusProject-Legacy/android_frameworks_base@688d56f
+
+   * hardware/qcom/media-caf/msm8974/
+ff4f54c Fix wrong nAllocLen
+6f9d2b9 omx_venc: Handle output buffer parameter in secure mode
+20d4fff mm-video-v4l2: vdec: allocate secure buffer as native_handle
+
+   * packages/apps/TeslaCoil/
+5228d26 Portuguese translation... ...thx Wislley Frauner
+0f84e2b add vector for carrier label category
+14fbd7f Custom Carrier Label & Carrier Label Placement [2/2] [Squashed] Credit/Thanks to @Altaf-Mahdi @beanstown106 and @martincz
+
+   * vendor/tesla/
+649a51b beta 3.1
+d172bf5 common: change DEV builds to UNOFFICIAL
+
+   * vendor/wingtech/
+ca04f86 remove IMS libraries
+e2cf17f remove remaining ims libraries
+1673807 Remove ims related blobs
+
+====================
+     11-02-2016
+====================
+
+
+   * frameworks/base/
+6630972 little fix
+c849b5a SystemUI: add Weather display to status bar header
+f91a529 fix fc
+b697bd3 Build fixes
+
+   * packages/apps/Settings/
+fec681b Merge pull request #4 from TeslaRom-N/n7.0
+c3f7b26 InstalledApp: show link to Google Play
+
+   * packages/apps/TeslaCoil/
+b851354 Show weather in statusbar header
+1e51e1c german translate
+fa30b73 Electrify
+20654f1 Why we have a test branch
+cba4107 Another Mirko vector test
+9e924a1 New Lockscreen Vector
+0fd167b Show summary for Teslacoil dashboard entry
+1f615b5 Add Lockscreen shortcuts
+
+====================
+     11-01-2016
+====================
+
+
+   * device/wingtech/wt88047/
+a5bf73d prop: enable sdcardfs support
+
+   * frameworks/base/
+aec3ad2 Allow adjusting screen density to smaller sizes.
+9859a1b SystemUI : Ensure previous camera preview is removed
+06f540a Lockscreen : Only animate targets if launched via swipe
+3af90d0 SystemUI: fix double tap power launching custom lockscreen icon
+fe6d853 SystemUI: avoid lock screen shortcut picker crash
+a1bd2a5 SettingsProvider : Add functions for delimited strings
+0ab9d8b SystemUI: Lockscreen shortcut customization Squashed with: Fix leftAffordanceView visibility bug 121c7a982cd88bef53b79baf3665db9c415281f8 LockscreenShortcuts: Since Voice assist is default use its icon 7e6c2ebf86fe95300705ce5da847ac0ee855e1b7
+
+   * packages/apps/Settings/
+6db9720 fix translate
+d2f20a0 Portuguese translation... ...thx Wislley Frauner
+
+   * vendor/tesla/
+387a76b sepolicy: Let the IO prefetcher look at sdcardfs
+55a570c sepolicy: Revert custom sdcardfs policy in favor of AOSP
+de57e94 sepolicy: A few more denials
+92f2da4 sepolicy: Add rule to allow sdcardfs to read package list
+f8a4c93 sepolicy: Add sdcardfs support
+

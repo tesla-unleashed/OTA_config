@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
+        <wt88047>
+            <Filename>Tesla-wt88047-7.0.Beta.v3.1-Official-20161105-0216.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download TeslaN build">https://www.androidfilehost.com/?fid=385035244224394294</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View TeslaN changelogs">https://github.com/TeslaRom-N/OTA_config/blob/master/Changelogs/Xiaomi/wt88047/Changelog.txt</ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
+            <XDAUrl
+                id="xda"
+                title="XDA"
+                description="Visit TeslaN Redmi-2 XDA thread">http://forum.xda-developers.com/redmi-2/development/rom-tesla-rom-3-0-beta-t3476487</XDAUrl>
+        </wt88047>
     </Stable>
 </SlimOTA>
