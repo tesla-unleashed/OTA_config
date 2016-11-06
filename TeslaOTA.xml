@@ -35,5 +35,20 @@
                 title="Gapps"
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </A0001>
+        <OnePlus3>
+            <Filename>Tesla-oneplus3-7.0.Beta.v3.1-Official-20161106-1116.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download TeslaN build - OTA testbuild at your own risk">https://www.androidfilehost.com/?fid=385035244224394948</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View TeslaN changelogs">https://github.com/TeslaRom-N/OTA_config/blob/master/Changelogs/OnePlus/Changelog.txt</ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
+        </OnePlus3>
     </Stable>
 </SlimOTA>
