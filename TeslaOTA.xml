@@ -2,7 +2,7 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <wt88047>
-            <Filename>Tesla-wt88047-7.0.Beta.v3.1-Official-20161105-0216.zip</Filename>
+            <Filename>Tesla-wt88047-7.0.Beta.v3.1-Official-20161106-2329.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"

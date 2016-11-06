@@ -1,15 +1,129 @@
 ====================
+     11-07-2016
+====================
+
+   * OTA_config/
+ca9c794 add op3 to ota list
+bca2574 add bacon to OTA
+
+   * device/wingtech/wt88047/
+18500fe overlay: for new button settings
+41c1ac2 camera: modify flags and definitions for legacy hal1
+c296cae Revert "don't build Snap"
+
+   * external/DUtils/
+e5094d7 Revert "Comment out screenrecord till issue is resolved"
+1b9c81e Revert "Small adjustment"
+
+   * frameworks/av/
+81c1f46 libstagefright: Support for legacy camera/encoder buffers
+
+   * frameworks/base/
+c43febb Merge branch 'testing' of https://github.com/TeslaRom-N/frameworks_base into HEAD
+5feddbd N-Extras: Add dynamic theme fonts support
+318add1 N-Extras: AudioService: Allow system effect sounds to be themed
+b5c5796 N-Extras: Add dynamic theme BootAnimation support
+d2846ef OMS7-N: Implement multi-target enable/disable and disable-all [11/11]
+00baf04 OMS7-N: Do not enforce code policy limiting overlay installation [10/11]
+614cdca OMS7-N: Persistence on boot through OverlayManagerServiceImpl [9/11]
+0fc0245 OMS7-N: Disable Zygote preloaded drawables [8/11]
+b1d01413 OMS7-N: installd: add command 'rmidmap' [7/11]
+d17b0c1 OMS7-N: Fix memory leak during idmap creation [6/11]
+98093b0 OMS7-N: idmap: suppress print for padded resources [5/11]
+2682354 OMS7-N: Set EXTRA_REPLACING correctly in ACTION_PACKAGE_ADDED [4/11]
+4566b97 OMS7-N: Integrate OverlayManagerService into framework [3/11]
+6b3d450 OMS7-N: Introduce the OverlayManagerService [2/11]
+40bfad8c OMS7-N: Support tagging resources as OK to overlay [1/11]
+4476761 This revert all fw-base oms3 commits + extras
+0490460 Buttons: Hardware key disable support with M adaptations [1/2]
+2ecce97 Fix QS background theming
+7222c46 frameworks/base: Don't report existing menu key if it was remapped. [2/3]
+ef634b9 Buttons: Bring up DU hardware key action binding framework [1/2]
+40dba78 Revert "Hardware key custom rebinding (1/2)"
+6df7585 Revert "add config to make HwKeys depend on an overlay(1/2)"
+
+   * manifest/
+da72acb external DUtils testing
+
+   * packages/apps/Bluetooth/
+56e115c Revert "Remove DayNight theme"
+
+   * packages/apps/KernelAdiutor/
+e13aa06 Theming cleanup
+
+   * packages/apps/Messaging/
+debce35 Few changes
+f9febce Night mode updates
+ba1f06e Messaging DayNight switching Add the capability for aosp messaging to switch with DayNight. there are zero drawable edits, only style and color changes. As is, there are minor unthemed elements in the message text input and contact search results due to not being able to change them without altering drawables.
+
+   * packages/apps/PackageInstaller/
+2887027 DayNight: Add inverse night drawables
+64d92b9 DayNight
+
+   * packages/apps/Settings/
+c6cec3a Merge branch 'n7.0' into testing
+977074d DayNight Manifest Changes
+
+   * packages/apps/TeslaCoil/
+ce072b1 Buttons: Hardware key disable support with M adaptations [2/2]
+c9bc749 Enable single tap rebinding for hwkey back and home
+0b5d662 Buttons: HwKey action binding preferences [3/3]
+7b21823 Revert "Hardwarekey rebinding (2/2)"
+904cd63 Revert "add config to make HwKeys depend on an overlay(2/2)"
+
+   * vendor/tesla/
+7f2c804 Updated Straight Talk APN (AT&T) Used for non Straight Talk devices (RESELLER)
+
+====================
+     11-06-2016
+====================
+
+   * OTA_config/
+9b349b7 OTA for Redmi2
+
+   * build/
+d71280c Later Browser hello Chromium
+586c20d Clean up a few packages
+38cd183 Changelog in settings (3)
+
+   * device/wingtech/wt88047/
+e917700 explicit ro.product.device=wt88047
+
+   * frameworks/base/
+dd0c302 Bring tesla night theme back
+944e4af Revert "Remove DayNight themes from public API (again)"
+592a7ba Revert "Remove DayNight theme"
+e5f0fdc Revert "Remove -night qualified resources"
+
+   * manifest/
+4f9b41f derp OTA config (remote is now tesla)
+41840f7 OTA config
+
+   * packages/apps/Settings/
+ec5e4c1 Bring tesla theme back
+310071e bring myself in
+44323e6 did i say you can be there? lol
+255aeda tesla about; add myself :)
+76432b2 tesla about: add me
+c11b689 tesla about: add Char
+e89436b Tesla about: add me
+
+   * packages/apps/TeslaCoil/
+a71957b make a screenshot category
+8bf02b5 make a lockscreen visualizer category
+
+   * vendor/tesla/
+6661f5e Merge branch 'n7.0' of https://github.com/TeslaRom-N/vendor_tesla into n7.0
+11f635d include device in tesla.version to match OTA config
+2baac80 Bring in Chromium
+205b5a5 Build OTA app
+
+====================
      11-05-2016
 ====================
 
    * OTA_config/
 2166eff start over with TeslaN
-
-   * build/
-38cd183 Changelog in settings (3)
-
-   * device/wingtech/wt88047/
-ad145fe explicit ro.product.device=wt88047
 
    * frameworks/av/
 8a4d2a8 camera/media: Support for legacy camera HALv1
@@ -28,6 +142,7 @@ a1dbdc6 screen record: make sure to always delete tmp files
 3ab93d1 bring back screen record shortcut
 
    * hardware/qcom/media-caf/msm8974/
+a30e39a libstagefrighthw: Remove padding in encoder_nativehandle_buffer_type
 cdbf224 mm-video-v4l2: venc: update metadata-type used for HAL1 based recording
 
    * packages/apps/Eleven/
@@ -49,9 +164,6 @@ bdb31ea About Tesla Section
 
    * packages/apps/TeslaCoil/
 fb8f25c Optional screenshot type [2/2]
-
-   * vendor/tesla/
-205b5a5 Build OTA app
 
 ====================
      11-04-2016
@@ -85,9 +197,6 @@ a4958c0 Add LOCAL_AIDL_FLAGS
 9f9f633 ninja: use host's ninja if it exists
 c8e9230 build: Allow both OpenJDK and OracleJDK by default
 0e85378 build: use the system's ccache by default
-
-   * device/wingtech/wt88047/
-dc23860 sick of camera hal1, disable for now
 
    * frameworks/av/
 b3d90dc MediaProfiles: Enhance profiles for extended usecases
@@ -175,57 +284,4 @@ d172bf5 common: change DEV builds to UNOFFICIAL
 ca04f86 remove IMS libraries
 e2cf17f remove remaining ims libraries
 1673807 Remove ims related blobs
-
-====================
-     11-02-2016
-====================
-
-
-   * frameworks/base/
-6630972 little fix
-c849b5a SystemUI: add Weather display to status bar header
-f91a529 fix fc
-b697bd3 Build fixes
-
-   * packages/apps/Settings/
-fec681b Merge pull request #4 from TeslaRom-N/n7.0
-c3f7b26 InstalledApp: show link to Google Play
-
-   * packages/apps/TeslaCoil/
-b851354 Show weather in statusbar header
-1e51e1c german translate
-fa30b73 Electrify
-20654f1 Why we have a test branch
-cba4107 Another Mirko vector test
-9e924a1 New Lockscreen Vector
-0fd167b Show summary for Teslacoil dashboard entry
-1f615b5 Add Lockscreen shortcuts
-
-====================
-     11-01-2016
-====================
-
-
-   * device/wingtech/wt88047/
-a5bf73d prop: enable sdcardfs support
-
-   * frameworks/base/
-aec3ad2 Allow adjusting screen density to smaller sizes.
-9859a1b SystemUI : Ensure previous camera preview is removed
-06f540a Lockscreen : Only animate targets if launched via swipe
-3af90d0 SystemUI: fix double tap power launching custom lockscreen icon
-fe6d853 SystemUI: avoid lock screen shortcut picker crash
-a1bd2a5 SettingsProvider : Add functions for delimited strings
-0ab9d8b SystemUI: Lockscreen shortcut customization Squashed with: Fix leftAffordanceView visibility bug 121c7a982cd88bef53b79baf3665db9c415281f8 LockscreenShortcuts: Since Voice assist is default use its icon 7e6c2ebf86fe95300705ce5da847ac0ee855e1b7
-
-   * packages/apps/Settings/
-6db9720 fix translate
-d2f20a0 Portuguese translation... ...thx Wislley Frauner
-
-   * vendor/tesla/
-387a76b sepolicy: Let the IO prefetcher look at sdcardfs
-55a570c sepolicy: Revert custom sdcardfs policy in favor of AOSP
-de57e94 sepolicy: A few more denials
-92f2da4 sepolicy: Add rule to allow sdcardfs to read package list
-f8a4c93 sepolicy: Add sdcardfs support
 
