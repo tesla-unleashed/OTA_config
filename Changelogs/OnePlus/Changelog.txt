@@ -1,0 +1,249 @@
+====================
+     11-06-2016
+====================
+
+
+   * frameworks/base/
+dd0c302 Bring tesla night theme back
+944e4af Revert "Remove DayNight themes from public API (again)"
+592a7ba Revert "Remove DayNight theme"
+e5f0fdc Revert "Remove -night qualified resources"
+
+   * packages/apps/Settings/
+ec5e4c1 Bring tesla theme back
+310071e bring myself in
+44323e6 did i say you can be there? lol
+255aeda tesla about; add myself :)
+76432b2 tesla about: add me
+
+   * packages/apps/TeslaCoil/
+a71957b make a screenshot category
+8bf02b5 make a lockscreen visualizer category
+
+====================
+     11-05-2016
+====================
+
+   * OTA_config/
+9b349b7 OTA for Redmi2
+2166eff start over with TeslaN
+
+   * build/
+d71280c Later Browser hello Chromium
+586c20d Clean up a few packages
+38cd183 Changelog in settings (3)
+
+   * device/oneplus/bacon/
+7ce1bbf kill off some flags
+853428d enable HALv1 & kill Snap
+
+   * frameworks/av/
+344523b libstagefright: Support for legacy camera/encoder buffers
+
+   * frameworks/base/
+86613d5 Optional screenshot type [1/2]
+
+   * hardware/qcom/media-caf/msm8974/
+a30e39a libstagefrighthw: Remove padding in encoder_nativehandle_buffer_type
+
+   * kernel/oneplus/msm8994/
+8f68ee3 KEYS: Fix short sprintf buffer in /proc/keys show function
+f0675c3 binder: prevent kptr leak by using %pK format specifier
+f8eb8f7 UPSTREAM: tcp: fix use after free in tcp_xmit_retransmit_queue()
+2440f83 net: Fix use after free in the recvmmsg exit path
+4daf468 mm: remove gup_flags FOLL_WRITE games from __get_user_pages()
+3c2ded6 qcacld-2.0: Merge with LA.BF64.1.2.3-00910-8x94.0
+
+   * manifest/
+4f9b41f derp OTA config (remote is now tesla)
+41840f7 OTA config
+
+   * packages/apps/Settings/
+c11b689 tesla about: add Char
+e89436b Tesla about: add me
+05fa97f fix TeslaAbout.java for nougat
+cf59d9a A cold with some code = what just happened
+bdb31ea About Tesla Section
+4ca8228 Changelog in settings(1)
+697968a Add TeslaOTA
+
+   * packages/apps/TeslaCoil/
+fb8f25c Optional screenshot type [2/2]
+
+   * vendor/tesla/
+6661f5e Merge branch 'n7.0' of https://github.com/TeslaRom-N/vendor_tesla into n7.0
+11f635d include device in tesla.version to match OTA config
+2baac80 Bring in Chromium
+205b5a5 Build OTA app
+
+====================
+     11-04-2016
+====================
+
+
+   * build/
+d42fce8 Fix a race condition while building the recovery patch (needed for msm8226)
+b91fbff ninja: increase maximum suffix length
+a4958c0 Add LOCAL_AIDL_FLAGS
+45ed79b Show complete command with args when ComputePatch fails
+9f9f633 ninja: use host's ninja if it exists
+c8e9230 build: Allow both OpenJDK and OracleJDK by default
+0e85378 build: use the system's ccache by default
+
+   * device/oneplus/bacon/
+6fdad69 disable hal1, tired of this crap
+a4ad13d Revert "bacon: Add GraphicBuffer shim for camera.vendor.bacon.so"
+745af5c bacon: Add GraphicBuffer shim for camera.vendor.bacon.so
+6261e57 Revert "disable hal1, tired of this crap"
+7a77387 disable hal1, tired of this crap
+
+   * device/oneplus/oneplus3/
+5258831 Revert "op3:prop: disable fluence"
+a3b324f op3:tasha: upscale all volumes 84<95
+
+   * frameworks/av/
+8a4d2a8 camera/media: Support for legacy camera HALv1
+0cb2d34 CameraService: Notify flashlight about device close
+a339184 Camera service: Trust telephony service to forward client UIDs.
+2ff1c88 Revert "av: Add support for CameraSource as metadata type"
+b3d90dc MediaProfiles: Enhance profiles for extended usecases
+90e13d3 av: Add support for CameraSource as metadata type
+
+   * frameworks/base/
+8095a7b Revert "Move weather down to header"
+015d44b Move weather down to header
+7d1271a Add a timer to screen record
+94df779 Save screenrecord in "Screenrecords" directory
+a1dbdc6 screen record: make sure to always delete tmp files
+8726aea Screen Recording: forward port from 4.4
+3ab93d1 bring back screen record shortcut
+
+   * hardware/qcom/media-caf/msm8974/
+cdbf224 mm-video-v4l2: venc: update metadata-type used for HAL1 based recording
+
+   * packages/apps/Eleven/
+afdb6bc Fix MediaSession queue handling.
+272271f Eleven: Simplify MediaSession queue processing
+
+   * packages/apps/PackageInstaller/
+48bd0e6 Fix PackageInstaller FC when tapping on a downloaded apk notification
+
+   * packages/apps/Snap/
+51d5e54 Merge remote-tracking branch 'cm/cm-14.0' into n7.0
+029226f Revert "temp: disable hwkeys"
+0ce2bbc Allow to use power key as shutter
+d86244c snap: Provide a way to remove Snap from the build
+
+   * packages/apps/TeslaCoil/
+64e8ce8 switch to color accent for better theming
+
+====================
+     11-03-2016
+====================
+
+
+   * bionic/
+3cd8ab7 Merge tag 'android-7.1.0_r4' into n7.0-caf
+de6aec4 Revert "bionic: Registration of trapping calls during libc initialization"
+32841d3 linker: load shims prior to dt_needed check
+8bd5584 Revert "bionic: Allow devices to add device specfic static libs"
+2a9193b bionic: fix scorpion architecture
+37488df linker: Make platform text relocations denial optional
+1b73e3f libc: allow forcing compilation with gcc
+791c0e6 bionic: Use a more simple strrchr for arm64
+7525f17 libc: AArch64: Tune memcpy
+5c54d3a libc: ARM64: add assembly strrchr
+21b6ff4 libc: ARM64: improve performance in strlen
+564e388 libc: ARM64: optimize memset.
+8888772 libc: ARM64: Optimize memcpy.
+5aec606 libc: ARM64: remove bcopy from memset
+9a1b9c1 libc: arm: add optimized memchr implementation
+4e3795a libc: Add Scorpion-optimized variant
+d8acafe Revert "linker: Avoid logcat spam in QCOM A-Family"
+
+   * device/oneplus/bacon/
+1cbfe66 bacon: try this
+
+   * frameworks/base/
+a9255d6 few fixes
+06aa1a6 Merge branch 'testing' of https://github.com/TeslaRom-N/frameworks_base into HEAD
+b5dce20 sysui: Use pixel navbar icons
+0108db0 frameworks: Toast long timeout fix
+b770f0a sysui: New google pixel colors
+a5b24cc base: New google pixel colors
+aa78c66 Fix Google Calendar FC
+25aa799 Fix race condition when writing UidState of appops.
+ae3f7b2 Fix NPE from AppOpsManager.checkPackage.
+7ad0190 webview_packages: correct signature definition for Chrome Stable
+97c41e0 [ActivityManager] Reset killed flag at attachApplicationLocked
+03fae03 Clear pending activity launches when force stop package
+5fe834b [ActivityManager] Fix the inconsistence between ProcessRecord and BroadcastQueues
+00e8f7d Fix to NullPointerException when activity is relaunched
+a688891 Let's cut Max Excape Animation in Half
+a86a0d0 Change night mode icons to match DU Tweaks setting
+89c45ed Clean up the tuner service/activity
+6d4009b Fix the Night mode on/off switch
+46535cf Don't check tuner availability to allow night mode
+dc1284e Remove unnecessary videos
+aecd090 Delete media tests
+a0df602 Fix NativeDaemonConnectorException issue accessing null object
+4b4552b [DownloadManager] Enqueue download request might fail and cause NullPointerException
+3b6a505 PowerManager: don't pass NULL pointers to power HAL
+80b5f97 frameworks: Fix keyboard layout notification missing issue
+700eef4 Fix DismissView cannot be clicked sometimes after boot
+35afe11 [AssetManager]:Fix thread race caused double free issue.
+fa5c9a4 Fix WallpaperManager APIs
+bc8529d Fix window animation flash issue
+f6f3fdd Change toast frames color to some better look ones
+0f7d6e6 Allow statusbar items to be launch without the jank [1/2]
+cbf5e43 camera: Tolerate errors in getHorizontal/VerticalViewAngle
+9e7f430 Custom Carrier Label & Carrier Label Placement [1/2] [Squashed] Squash Of: Keyguard/Statusbar Carrier label options [1/2] * Stock behavior(only on keyguard), only on statusbar,both disabled or both enabled * code originally writted by @Altaf-Mahdi i just squased into one commit PureNexusProject-Legacy/android_frameworks_base@688d56f
+
+   * hardware/qcom/media-caf/msm8974/
+ff4f54c Fix wrong nAllocLen
+6f9d2b9 omx_venc: Handle output buffer parameter in secure mode
+20d4fff mm-video-v4l2: vdec: allocate secure buffer as native_handle
+
+   * kernel/oneplus/msm8996/
+e5c1ea6 soc: qcom: Update oneplus    *_info for newer firmwares
+f2008c3 ASoC: wcd9335: Fix kctl_put and get functionality for SLIM RXX MUX
+2ba6605 ASoC: msm: qdsp6v2: Change device switch handling
+8e57cab ASoC: msm8x16-wcd: add support for packed 24 bit
+1b17ffb ASoC: msm8x16-wcd: add support for packed 24 bit
+aa51b9a ASoC: msm: qdsp6v2: move adsp_err to c source file
+748a431 msm: Fix failure in deregistering custom topologies
+af99462 asoc: msm: Clean up OEM nonsense
+ae781d1 ASoC: msm: qdsp6v2: Fix offload gapless transition
+37b4da5 ASoc: msm: qdsp6v2: Fix timestamp glitch during gapless transition
+fab18cb ASoC: msm: Use legacy ASM APIs for older targets
+084f3c2 mm: remove gup_flags FOLL_WRITE games from __get_user_pages()
+2871c5c KEYS: Fix short sprintf buffer in /proc/keys show function
+
+   * packages/apps/Settings/
+40fc61c Try some pixel colors
+ca9919d Move App Ops to Main Settings
+0c0c913 settings: Fix viewpager tabs not showing on AppOpsSummary
+8a49b24 Return App Ops (bug - without tabs)
+
+   * packages/apps/TeslaCoil/
+0b0f6c9 Fix derps try a few pixel color changes
+83f864c Squash: Move tuner to TeslaCoil
+5228d26 Portuguese translation... ...thx Wislley Frauner
+0f84e2b add vector for carrier label category
+14fbd7f Custom Carrier Label & Carrier Label Placement [2/2] [Squashed] Credit/Thanks to @Altaf-Mahdi @beanstown106 and @martincz
+
+   * vendor/oneplus/
+3ceae6c op2: blobs for N
+
+   * vendor/qcom/binaries/
+6314e4d Merge pull request #1 from TheMuppets/cm-14.1
+
+   * vendor/tesla/
+649a51b beta 3.1
+d172bf5 common: change DEV builds to UNOFFICIAL
+
+====================
+     11-02-2016
+====================
+
+
