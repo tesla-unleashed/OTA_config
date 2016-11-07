@@ -65,5 +65,20 @@
                 title="Gapps"
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </lux>
+        <shieldtablet>
+            <Filename>Tesla-shieldtablet-7.0.Beta.v3.1-Official-20161107-2038.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download TeslaN build">https://www.androidfilehost.com/?fid=457095661767112502</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View TeslaN changelogs">https://github.com/TeslaRom-N/OTA_config/blob/master/Changelogs/Nvidia/shieldtablet/Changelog.txt</ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
+        </shieldtablet>
     </Stable>
 </SlimOTA>
