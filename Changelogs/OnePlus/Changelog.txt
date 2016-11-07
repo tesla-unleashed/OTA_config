@@ -1,24 +1,123 @@
 ====================
+     11-07-2016
+====================
+
+   * OTA_config/
+eaf0e89 ota update Redmi2
+
+   * device/oneplus/oneplus2/
+779f170 op2: specify its op2
+1ffe2a3 Revert "op2: add config to make HardwareKey settings show in TeslaCoil"
+862e15e Merge branch 'cm-14.1' of https://github.com/Grarak/android_device_oneplus_oneplus2 into HEAD
+
+   * device/oneplus/oneplus3/
+39d86cf Revert "op3: add config to make HardwareKey settings show in TeslaCoil"
+
+   * device/oppo/common/
+5b52315 Revert "Revert "devicehandler: follow day/night""
+909fdc8 Merge pull request #1 from benschhold/n7.0
+ad8a959 fix added notification slider modes
+
+   * frameworks/base/
+7548ea3 Use system for volume dialog
+
+   * packages/apps/Messaging/
+5f1d178 Dark theme proper
+debce35 Few changes
+f9febce Night mode updates
+ba1f06e Messaging DayNight switching Add the capability for aosp messaging to switch with DayNight. there are zero drawable edits, only style and color changes. As is, there are minor unthemed elements in the message text input and contact search results due to not being able to change them without altering drawables.
+
+   * packages/apps/Settings/
+78dac52 edit Adam #fixit
+
+   * vendor/oneplus/
+2bb5899 oneplus2: Rename mm-qcamera-daemon
+2d9b758 oneplus2: Widevine blobs from op3
+
+====================
      11-06-2016
 ====================
 
+   * OTA_config/
+ca9c794 add op3 to ota list
+bca2574 add bacon to OTA
+
+   * device/oneplus/bacon/
+4918f46 Revert "bacon: add config to make HardwareKey settings show in TeslaCoil"
+87b4b9d cleanup
+
+   * device/oneplus/oneplus2/
+7d6f5fd Remove extra camera parameters
+1b8230d Fix cpuset for qcamera and clean up sepolicy
+0eee33d overlay: Enable missing volte bools
+bfee7a6 Add widevine blobs
+63616db Update ril header
+
+   * external/DUtils/
+e5094d7 Revert "Comment out screenrecord till issue is resolved"
+1b9c81e Revert "Small adjustment"
+
+   * frameworks/av/
+81c1f46 libstagefright: Support for legacy camera/encoder buffers
 
    * frameworks/base/
+c43febb Merge branch 'testing' of https://github.com/TeslaRom-N/frameworks_base into HEAD
+5feddbd N-Extras: Add dynamic theme fonts support
+318add1 N-Extras: AudioService: Allow system effect sounds to be themed
+b5c5796 N-Extras: Add dynamic theme BootAnimation support
+d2846ef OMS7-N: Implement multi-target enable/disable and disable-all [11/11]
+00baf04 OMS7-N: Do not enforce code policy limiting overlay installation [10/11]
+614cdca OMS7-N: Persistence on boot through OverlayManagerServiceImpl [9/11]
+0fc0245 OMS7-N: Disable Zygote preloaded drawables [8/11]
+b1d01413 OMS7-N: installd: add command 'rmidmap' [7/11]
+d17b0c1 OMS7-N: Fix memory leak during idmap creation [6/11]
+98093b0 OMS7-N: idmap: suppress print for padded resources [5/11]
+2682354 OMS7-N: Set EXTRA_REPLACING correctly in ACTION_PACKAGE_ADDED [4/11]
+4566b97 OMS7-N: Integrate OverlayManagerService into framework [3/11]
+6b3d450 OMS7-N: Introduce the OverlayManagerService [2/11]
+40bfad8c OMS7-N: Support tagging resources as OK to overlay [1/11]
+4476761 This revert all fw-base oms3 commits + extras
+0490460 Buttons: Hardware key disable support with M adaptations [1/2]
+2ecce97 Fix QS background theming
+7222c46 frameworks/base: Don't report existing menu key if it was remapped. [2/3]
+ef634b9 Buttons: Bring up DU hardware key action binding framework [1/2]
+40dba78 Revert "Hardware key custom rebinding (1/2)"
+6df7585 Revert "add config to make HwKeys depend on an overlay(1/2)"
 dd0c302 Bring tesla night theme back
 944e4af Revert "Remove DayNight themes from public API (again)"
 592a7ba Revert "Remove DayNight theme"
 e5f0fdc Revert "Remove -night qualified resources"
 
+   * manifest/
+da72acb external DUtils testing
+
+   * packages/apps/Bluetooth/
+56e115c Revert "Remove DayNight theme"
+
+   * packages/apps/KernelAdiutor/
+e13aa06 Theming cleanup
+
+   * packages/apps/PackageInstaller/
+2887027 DayNight: Add inverse night drawables
+64d92b9 DayNight
+
    * packages/apps/Settings/
+c6cec3a Merge branch 'n7.0' into testing
+977074d DayNight Manifest Changes
 ec5e4c1 Bring tesla theme back
 310071e bring myself in
 44323e6 did i say you can be there? lol
 255aeda tesla about; add myself :)
-76432b2 tesla about: add me
 
    * packages/apps/TeslaCoil/
-a71957b make a screenshot category
-8bf02b5 make a lockscreen visualizer category
+ce072b1 Buttons: Hardware key disable support with M adaptations [2/2]
+c9bc749 Enable single tap rebinding for hwkey back and home
+0b5d662 Buttons: HwKey action binding preferences [3/3]
+7b21823 Revert "Hardwarekey rebinding (2/2)"
+904cd63 Revert "add config to make HwKeys depend on an overlay(2/2)"
+
+   * vendor/tesla/
+7f2c804 Updated Straight Talk APN (AT&T) Used for non Straight Talk devices (RESELLER)
 
 ====================
      11-05-2016
@@ -26,49 +125,25 @@ a71957b make a screenshot category
 
    * OTA_config/
 9b349b7 OTA for Redmi2
-2166eff start over with TeslaN
 
    * build/
 d71280c Later Browser hello Chromium
 586c20d Clean up a few packages
 38cd183 Changelog in settings (3)
 
-   * device/oneplus/bacon/
-7ce1bbf kill off some flags
-853428d enable HALv1 & kill Snap
-
-   * frameworks/av/
-344523b libstagefright: Support for legacy camera/encoder buffers
-
-   * frameworks/base/
-86613d5 Optional screenshot type [1/2]
-
-   * hardware/qcom/media-caf/msm8974/
-a30e39a libstagefrighthw: Remove padding in encoder_nativehandle_buffer_type
-
-   * kernel/oneplus/msm8994/
-8f68ee3 KEYS: Fix short sprintf buffer in /proc/keys show function
-f0675c3 binder: prevent kptr leak by using %pK format specifier
-f8eb8f7 UPSTREAM: tcp: fix use after free in tcp_xmit_retransmit_queue()
-2440f83 net: Fix use after free in the recvmmsg exit path
-4daf468 mm: remove gup_flags FOLL_WRITE games from __get_user_pages()
-3c2ded6 qcacld-2.0: Merge with LA.BF64.1.2.3-00910-8x94.0
-
    * manifest/
 4f9b41f derp OTA config (remote is now tesla)
 41840f7 OTA config
 
    * packages/apps/Settings/
+76432b2 tesla about: add me
 c11b689 tesla about: add Char
 e89436b Tesla about: add me
 05fa97f fix TeslaAbout.java for nougat
-cf59d9a A cold with some code = what just happened
-bdb31ea About Tesla Section
-4ca8228 Changelog in settings(1)
-697968a Add TeslaOTA
 
    * packages/apps/TeslaCoil/
-fb8f25c Optional screenshot type [2/2]
+a71957b make a screenshot category
+8bf02b5 make a lockscreen visualizer category
 
    * vendor/tesla/
 6661f5e Merge branch 'n7.0' of https://github.com/TeslaRom-N/vendor_tesla into n7.0
@@ -80,22 +155,13 @@ fb8f25c Optional screenshot type [2/2]
      11-04-2016
 ====================
 
-
-   * build/
-d42fce8 Fix a race condition while building the recovery patch (needed for msm8226)
-b91fbff ninja: increase maximum suffix length
-a4958c0 Add LOCAL_AIDL_FLAGS
-45ed79b Show complete command with args when ComputePatch fails
-9f9f633 ninja: use host's ninja if it exists
-c8e9230 build: Allow both OpenJDK and OracleJDK by default
-0e85378 build: use the system's ccache by default
+   * OTA_config/
+2166eff start over with TeslaN
 
    * device/oneplus/bacon/
+7ce1bbf kill off some flags
+853428d enable HALv1 & kill Snap
 6fdad69 disable hal1, tired of this crap
-a4ad13d Revert "bacon: Add GraphicBuffer shim for camera.vendor.bacon.so"
-745af5c bacon: Add GraphicBuffer shim for camera.vendor.bacon.so
-6261e57 Revert "disable hal1, tired of this crap"
-7a77387 disable hal1, tired of this crap
 
    * device/oneplus/oneplus3/
 5258831 Revert "op3:prop: disable fluence"
@@ -106,10 +172,9 @@ a3b324f op3:tasha: upscale all volumes 84<95
 0cb2d34 CameraService: Notify flashlight about device close
 a339184 Camera service: Trust telephony service to forward client UIDs.
 2ff1c88 Revert "av: Add support for CameraSource as metadata type"
-b3d90dc MediaProfiles: Enhance profiles for extended usecases
-90e13d3 av: Add support for CameraSource as metadata type
 
    * frameworks/base/
+86613d5 Optional screenshot type [1/2]
 8095a7b Revert "Move weather down to header"
 015d44b Move weather down to header
 7d1271a Add a timer to screen record
@@ -119,7 +184,16 @@ a1dbdc6 screen record: make sure to always delete tmp files
 3ab93d1 bring back screen record shortcut
 
    * hardware/qcom/media-caf/msm8974/
+a30e39a libstagefrighthw: Remove padding in encoder_nativehandle_buffer_type
 cdbf224 mm-video-v4l2: venc: update metadata-type used for HAL1 based recording
+
+   * kernel/oneplus/msm8994/
+8f68ee3 KEYS: Fix short sprintf buffer in /proc/keys show function
+f0675c3 binder: prevent kptr leak by using %pK format specifier
+f8eb8f7 UPSTREAM: tcp: fix use after free in tcp_xmit_retransmit_queue()
+2440f83 net: Fix use after free in the recvmmsg exit path
+4daf468 mm: remove gup_flags FOLL_WRITE games from __get_user_pages()
+3c2ded6 qcacld-2.0: Merge with LA.BF64.1.2.3-00910-8x94.0
 
    * packages/apps/Eleven/
 afdb6bc Fix MediaSession queue handling.
@@ -128,14 +202,17 @@ afdb6bc Fix MediaSession queue handling.
    * packages/apps/PackageInstaller/
 48bd0e6 Fix PackageInstaller FC when tapping on a downloaded apk notification
 
+   * packages/apps/Settings/
+cf59d9a A cold with some code = what just happened
+bdb31ea About Tesla Section
+4ca8228 Changelog in settings(1)
+697968a Add TeslaOTA
+
    * packages/apps/Snap/
 51d5e54 Merge remote-tracking branch 'cm/cm-14.0' into n7.0
-029226f Revert "temp: disable hwkeys"
-0ce2bbc Allow to use power key as shutter
-d86244c snap: Provide a way to remove Snap from the build
 
    * packages/apps/TeslaCoil/
-64e8ce8 switch to color accent for better theming
+fb8f25c Optional screenshot type [2/2]
 
 ====================
      11-03-2016
@@ -161,8 +238,34 @@ de6aec4 Revert "bionic: Registration of trapping calls during libc initializatio
 4e3795a libc: Add Scorpion-optimized variant
 d8acafe Revert "linker: Avoid logcat spam in QCOM A-Family"
 
+   * build/
+d42fce8 Fix a race condition while building the recovery patch (needed for msm8226)
+b91fbff ninja: increase maximum suffix length
+a4958c0 Add LOCAL_AIDL_FLAGS
+45ed79b Show complete command with args when ComputePatch fails
+9f9f633 ninja: use host's ninja if it exists
+c8e9230 build: Allow both OpenJDK and OracleJDK by default
+0e85378 build: use the system's ccache by default
+
    * device/oneplus/bacon/
-1cbfe66 bacon: try this
+a4ad13d Revert "bacon: Add GraphicBuffer shim for camera.vendor.bacon.so"
+745af5c bacon: Add GraphicBuffer shim for camera.vendor.bacon.so
+6261e57 Revert "disable hal1, tired of this crap"
+7a77387 disable hal1, tired of this crap
+
+   * device/oneplus/oneplus2/
+ab39420 op2: adb at boot
+487cf7d op2: use Tesla vendor caf_fw.mk
+f17a9d3 fixes
+595fdf0 Revert "oneplus2: Bring DozeSettings up to date"
+7dce598 OnePlus2: set DPI to 400
+5f3f283 op2: add config to make HardwareKey settings show in TeslaCoil
+939e828 This is Tesla
+0a8dfed disable stuff we dont need
+
+   * frameworks/av/
+b3d90dc MediaProfiles: Enhance profiles for extended usecases
+90e13d3 av: Add support for CameraSource as metadata type
 
    * frameworks/base/
 a9255d6 few fixes
@@ -196,13 +299,6 @@ fa5c9a4 Fix WallpaperManager APIs
 bc8529d Fix window animation flash issue
 f6f3fdd Change toast frames color to some better look ones
 0f7d6e6 Allow statusbar items to be launch without the jank [1/2]
-cbf5e43 camera: Tolerate errors in getHorizontal/VerticalViewAngle
-9e7f430 Custom Carrier Label & Carrier Label Placement [1/2] [Squashed] Squash Of: Keyguard/Statusbar Carrier label options [1/2] * Stock behavior(only on keyguard), only on statusbar,both disabled or both enabled * code originally writted by @Altaf-Mahdi i just squased into one commit PureNexusProject-Legacy/android_frameworks_base@688d56f
-
-   * hardware/qcom/media-caf/msm8974/
-ff4f54c Fix wrong nAllocLen
-6f9d2b9 omx_venc: Handle output buffer parameter in secure mode
-20d4fff mm-video-v4l2: vdec: allocate secure buffer as native_handle
 
    * kernel/oneplus/msm8996/
 e5c1ea6 soc: qcom: Update oneplus    *_info for newer firmwares
@@ -225,25 +321,16 @@ ca9919d Move App Ops to Main Settings
 0c0c913 settings: Fix viewpager tabs not showing on AppOpsSummary
 8a49b24 Return App Ops (bug - without tabs)
 
+   * packages/apps/Snap/
+029226f Revert "temp: disable hwkeys"
+0ce2bbc Allow to use power key as shutter
+d86244c snap: Provide a way to remove Snap from the build
+
    * packages/apps/TeslaCoil/
+64e8ce8 switch to color accent for better theming
 0b0f6c9 Fix derps try a few pixel color changes
 83f864c Squash: Move tuner to TeslaCoil
-5228d26 Portuguese translation... ...thx Wislley Frauner
-0f84e2b add vector for carrier label category
-14fbd7f Custom Carrier Label & Carrier Label Placement [2/2] [Squashed] Credit/Thanks to @Altaf-Mahdi @beanstown106 and @martincz
-
-   * vendor/oneplus/
-3ceae6c op2: blobs for N
 
    * vendor/qcom/binaries/
 6314e4d Merge pull request #1 from TheMuppets/cm-14.1
-
-   * vendor/tesla/
-649a51b beta 3.1
-d172bf5 common: change DEV builds to UNOFFICIAL
-
-====================
-     11-02-2016
-====================
-
 
