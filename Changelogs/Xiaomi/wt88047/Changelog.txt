@@ -1,8 +1,30 @@
 ====================
+     11-08-2016
+====================
+
+   * OTA_config/
+c1abe6b op3 new build only ota
+cf83d88 update bacon
+
+   * manifest/
+87701f2 derp OTA config (remote is now tesla)
+80577b2 OTA config
+
+   * packages/apps/Messaging/
+5f1d178 Dark theme proper
+
+   * packages/apps/Settings/
+78dac52 edit Adam #fixit
+
+   * packages/apps/TeslaCoil/
+9f87291 Merge branch 'testing' of https://github.com/TeslaRom-N/packages_apps_TeslaCoil into n7.0
+
+====================
      11-07-2016
 ====================
 
    * OTA_config/
+eaf0e89 ota update Redmi2
 ca9c794 add op3 to ota list
 bca2574 add bacon to OTA
 
@@ -19,6 +41,7 @@ e5094d7 Revert "Comment out screenrecord till issue is resolved"
 81c1f46 libstagefright: Support for legacy camera/encoder buffers
 
    * frameworks/base/
+7548ea3 Use system for volume dialog
 c43febb Merge branch 'testing' of https://github.com/TeslaRom-N/frameworks_base into HEAD
 5feddbd N-Extras: Add dynamic theme fonts support
 318add1 N-Extras: AudioService: Allow system effect sounds to be themed
@@ -37,13 +60,6 @@ d17b0c1 OMS7-N: Fix memory leak during idmap creation [6/11]
 4476761 This revert all fw-base oms3 commits + extras
 0490460 Buttons: Hardware key disable support with M adaptations [1/2]
 2ecce97 Fix QS background theming
-7222c46 frameworks/base: Don't report existing menu key if it was remapped. [2/3]
-ef634b9 Buttons: Bring up DU hardware key action binding framework [1/2]
-40dba78 Revert "Hardware key custom rebinding (1/2)"
-6df7585 Revert "add config to make HwKeys depend on an overlay(1/2)"
-
-   * manifest/
-da72acb external DUtils testing
 
    * packages/apps/Bluetooth/
 56e115c Revert "Remove DayNight theme"
@@ -65,6 +81,7 @@ c6cec3a Merge branch 'n7.0' into testing
 977074d DayNight Manifest Changes
 
    * packages/apps/TeslaCoil/
+653c458 Lets theme the slider indicator
 ce072b1 Buttons: Hardware key disable support with M adaptations [2/2]
 c9bc749 Enable single tap rebinding for hwkey back and home
 0b5d662 Buttons: HwKey action binding preferences [3/3]
@@ -90,14 +107,14 @@ d71280c Later Browser hello Chromium
 e917700 explicit ro.product.device=wt88047
 
    * frameworks/base/
+7222c46 frameworks/base: Don't report existing menu key if it was remapped. [2/3]
+ef634b9 Buttons: Bring up DU hardware key action binding framework [1/2]
+40dba78 Revert "Hardware key custom rebinding (1/2)"
+6df7585 Revert "add config to make HwKeys depend on an overlay(1/2)"
 dd0c302 Bring tesla night theme back
 944e4af Revert "Remove DayNight themes from public API (again)"
 592a7ba Revert "Remove DayNight theme"
 e5f0fdc Revert "Remove -night qualified resources"
-
-   * manifest/
-4f9b41f derp OTA config (remote is now tesla)
-41840f7 OTA config
 
    * packages/apps/Settings/
 ec5e4c1 Bring tesla theme back
@@ -250,38 +267,4 @@ d86244c snap: Provide a way to remove Snap from the build
 64e8ce8 switch to color accent for better theming
 0b0f6c9 Fix derps try a few pixel color changes
 83f864c Squash: Move tuner to TeslaCoil
-
-====================
-     11-03-2016
-====================
-
-
-   * device/wingtech/wt88047/
-90cd8db disable volte overlay
-ba6c5d6 remove ims deamons
-ca90cdd Don't make ims-ext-common and ims
-263b704 Remove ims
-
-   * frameworks/base/
-cbf5e43 camera: Tolerate errors in getHorizontal/VerticalViewAngle
-9e7f430 Custom Carrier Label & Carrier Label Placement [1/2] [Squashed] Squash Of: Keyguard/Statusbar Carrier label options [1/2] * Stock behavior(only on keyguard), only on statusbar,both disabled or both enabled * code originally writted by @Altaf-Mahdi i just squased into one commit PureNexusProject-Legacy/android_frameworks_base@688d56f
-
-   * hardware/qcom/media-caf/msm8974/
-ff4f54c Fix wrong nAllocLen
-6f9d2b9 omx_venc: Handle output buffer parameter in secure mode
-20d4fff mm-video-v4l2: vdec: allocate secure buffer as native_handle
-
-   * packages/apps/TeslaCoil/
-5228d26 Portuguese translation... ...thx Wislley Frauner
-0f84e2b add vector for carrier label category
-14fbd7f Custom Carrier Label & Carrier Label Placement [2/2] [Squashed] Credit/Thanks to @Altaf-Mahdi @beanstown106 and @martincz
-
-   * vendor/tesla/
-649a51b beta 3.1
-d172bf5 common: change DEV builds to UNOFFICIAL
-
-   * vendor/wingtech/
-ca04f86 remove IMS libraries
-e2cf17f remove remaining ims libraries
-1673807 Remove ims related blobs
 
