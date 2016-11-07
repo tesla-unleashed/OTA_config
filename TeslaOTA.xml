@@ -80,5 +80,20 @@
                 title="Gapps"
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </shieldtablet>
+        <hammerhead>
+            <Filename>Tesla-hammerhead-7.0.Beta.v3.1-Official-20161107-1948.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download TeslaN build">https://www.androidfilehost.com/?fid=385035244224395394</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View TeslaN changelogs">https://github.com/TeslaRom-N/OTA_config/blob/master/Changelogs/LG/hammerhead/Changelog.txt</ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
+        </hammerhead>
     </Stable>
 </SlimOTA>
