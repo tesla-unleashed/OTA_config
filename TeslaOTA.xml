@@ -51,11 +51,11 @@
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </OnePlus3>
         <lux>
-            <Filename>Tesla-lux-7.0.Beta.v3.1-Official-20161107-1858.zip</Filename>
+            <Filename>Tesla-lux-7.0.Beta.v3.1-Official-20161115-2222.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TeslaN build">https://www.androidfilehost.com/?fid=529152257862678425</RomUrl>
+                description="Download TeslaN build">https://www.androidfilehost.com/?fid=385035244224398801</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
