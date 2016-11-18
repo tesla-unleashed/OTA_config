@@ -1,4 +1,18 @@
 ====================
+For more details, see further below
+====================
+* 7.0_r19
+* screen record shortcut to power menu
+* November security patch
+* Dark theme toggles, better visibility for on/off
+* Vendor libs related to CNE/DPM removed for improving battery consumption, not
+* great in use as of now
+* kexec is implemented in the kernel, no need to install kexec patched kernel
+* while using as Primary
+* Other changes/fixes
+====================
+
+====================
      11-18-2016
 ====================
 
