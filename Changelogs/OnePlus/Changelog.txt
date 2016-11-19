@@ -1,216 +1,82 @@
 ====================
-     11-11-2016
+     11-19-2016
 ====================
 
-
-   * device/oneplus/oneplus2/
-38c1ad2 #HalpeMePls
-
-   * device/oneplus/oneplus3/
-aca8696 op3: disable dexpreopt
-77c14b2 op3: Update wifi config from CB 3.5.5
-
-   * frameworks/av/
-bd23417 Allow to use baseline profile for AVC recording
-
-   * frameworks/base/
-8361165 FwBools: Enable/disable ambient notification color inversion [1/2]
-
-   * packages/apps/Settings/
-756ae3b Add back a helper pref that holds a system setting.
-7094e49 FwBools: Enable/disable doze notification color inversion [2/2]
-0b591d8 FwBools: Allow the user to toggle dynamic notification title colors [2/2]
-
-====================
-     11-10-2016
-====================
-
-
-   * build/
-1bf3dae Merge tag 'android-7.0.0_r19' into n7.0
-
-   * device/oneplus/oneplus3/
-d313f84 op3:prop: sdk fluence=none
-2e2006e op3:tasha: dec4 75
-7c2fab2 Revert "op3:tasha: upscale all volumes 84<95"
-
-   * external/skia/
-061512d Merge tag 'android-7.0.0_r19' into n7.0
-
-   * frameworks/base/
-9848fb2 Teslacoil
-ada34ff Brighten switches for Prema
-
-   * frameworks/opt/telephony/
-5dd5af6 Merge tag 'android-7.0.0_r19' into n7.0
-
-   * hardware/qcom/audio/default/
-7ea1218 Merge tag 'android-7.0.0_r19' into n7.0
-
-   * libcore/
-f06f7b6 Merge tag 'android-7.0.0_r19' into n7.0
-
-   * packages/apps/Bluetooth/
-48109b1 Merge tag 'android-7.0.0_r19' into n7.0
-
-   * packages/apps/Stk/
-4911188 Merge tag 'android-7.0.0_r19' into n7.0
-
-   * packages/providers/DownloadProvider/
-fa5699e Merge tag 'android-7.0.0_r19' into n7.0
-
-   * system/core/
-790fc14 Merge tag 'android-7.0.0_r19' into n7.0
-
-   * system/media/
-b37f605 Merge tag 'android-7.0.0_r19' into n7.0
-
-   * system/sepolicy/
-d53749b Merge tag 'android-7.0.0_r19' into n7.0
-
-   * vendor/qcom/binaries/
-4d71bac Merge pull request #2 from TheMuppets/cm-14.1
-
-====================
-     11-09-2016
-====================
-
-
-   * build/
-1882156 qcom: Fix media pathmap for AOSP variant
-
-   * frameworks/av/
-c143ae2 fix "cannot locate symbol "_ZN7android16MediaBufferGroup14acquire_bufferEPPNS_11MediaBufferE"   referenced by libwvm.soo"
-
-   * frameworks/base/
-f251952 Revert "Add support for sending raw commands"
-e1368ec Do not scan a file which cannot be read
-4be6a5a Should use scan flag, or it will not scan device.
-a7065e7 MediaScanner: Detect folders
-83b1090 Add support for sending raw commands
-9a795cf MiniThumbFile: Fix image/bitmap retrieval
-dbdaf5f Rework thumbnail handling
-
-   * hardware/qcom/audio-caf/msm8994/
-7a01225 post_proc: Fix mismerge by CAF
-87e1cfc Revert "post_proc: fix crash in offload effect bundle during stop output"
-
-   * vendor/qcom/binaries/
-ba0d8e6 qcom-binaries: Update makefiles
-
-====================
-     11-08-2016
-====================
-
-   * OTA_config/
-7fd767a ota: update redmi2
-5fe3390 Add hammerhead
-d1e3538 Add shieldtablet
-eaba3db Add lux
-fe5292e Merge https://github.com/TeslaRom-N/OTA_config into HEAD
-46607b6 Add lux, hammerhead and shieldtablet changelogs
-c1abe6b op3 new build only ota
-cf83d88 update bacon
-
-   * device/oneplus/oneplus2/
-5dff462 Bye bye cm
-a6237a9 Removed since its already defined
-779f170 op2: specify its op2
-1ffe2a3 Revert "op2: add config to make HardwareKey settings show in TeslaCoil"
-
-   * device/oneplus/oneplus3/
-e1736a0 Revert "op3: Update camera shim"
-124c421 op3: Enable legacy HAL1 hackage
-d20ffc1 op3: Update camera shim
-
-   * device/oppo/common/
-5b52315 Revert "Revert "devicehandler: follow day/night""
-909fdc8 Merge pull request #1 from benschhold/n7.0
-
-====================
-     11-07-2016
-====================
-
-   * OTA_config/
-eaf0e89 ota update Redmi2
-ca9c794 add op3 to ota list
-bca2574 add bacon to OTA
-
-   * device/oneplus/bacon/
-4918f46 Revert "bacon: add config to make HardwareKey settings show in TeslaCoil"
-87b4b9d cleanup
-
-   * device/oneplus/oneplus2/
-862e15e Merge branch 'cm-14.1' of https://github.com/Grarak/android_device_oneplus_oneplus2 into HEAD
-7d6f5fd Remove extra camera parameters
-1b8230d Fix cpuset for qcamera and clean up sepolicy
-0eee33d overlay: Enable missing volte bools
-
-   * device/oneplus/oneplus3/
-39d86cf Revert "op3: add config to make HardwareKey settings show in TeslaCoil"
-
-   * device/oppo/common/
-ad8a959 fix added notification slider modes
-
-   * external/DUtils/
-e5094d7 Revert "Comment out screenrecord till issue is resolved"
-1b9c81e Revert "Small adjustment"
-
-   * frameworks/av/
-81c1f46 libstagefright: Support for legacy camera/encoder buffers
-
-   * frameworks/base/
-7548ea3 Use system for volume dialog
-c43febb Merge branch 'testing' of https://github.com/TeslaRom-N/frameworks_base into HEAD
-5feddbd N-Extras: Add dynamic theme fonts support
-318add1 N-Extras: AudioService: Allow system effect sounds to be themed
-b5c5796 N-Extras: Add dynamic theme BootAnimation support
-d2846ef OMS7-N: Implement multi-target enable/disable and disable-all [11/11]
-00baf04 OMS7-N: Do not enforce code policy limiting overlay installation [10/11]
-614cdca OMS7-N: Persistence on boot through OverlayManagerServiceImpl [9/11]
-0fc0245 OMS7-N: Disable Zygote preloaded drawables [8/11]
-b1d01413 OMS7-N: installd: add command 'rmidmap' [7/11]
-d17b0c1 OMS7-N: Fix memory leak during idmap creation [6/11]
-98093b0 OMS7-N: idmap: suppress print for padded resources [5/11]
-2682354 OMS7-N: Set EXTRA_REPLACING correctly in ACTION_PACKAGE_ADDED [4/11]
-4566b97 OMS7-N: Integrate OverlayManagerService into framework [3/11]
-6b3d450 OMS7-N: Introduce the OverlayManagerService [2/11]
-40bfad8c OMS7-N: Support tagging resources as OK to overlay [1/11]
-4476761 This revert all fw-base oms3 commits + extras
-0490460 Buttons: Hardware key disable support with M adaptations [1/2]
-2ecce97 Fix QS background theming
-
-   * manifest/
-da72acb external DUtils testing
-
-   * packages/apps/Bluetooth/
-56e115c Revert "Remove DayNight theme"
-
-   * packages/apps/KernelAdiutor/
-e13aa06 Theming cleanup
-
-   * packages/apps/Messaging/
-5f1d178 Dark theme proper
-debce35 Few changes
-f9febce Night mode updates
-ba1f06e Messaging DayNight switching Add the capability for aosp messaging to switch with DayNight. there are zero drawable edits, only style and color changes. As is, there are minor unthemed elements in the message text input and contact search results due to not being able to change them without altering drawables.
-
-   * packages/apps/PackageInstaller/
-2887027 DayNight: Add inverse night drawables
-64d92b9 DayNight
-
-   * packages/apps/Settings/
-78dac52 edit Adam #fixit
-c6cec3a Merge branch 'n7.0' into testing
-977074d DayNight Manifest Changes
-
-   * packages/apps/TeslaCoil/
-ce072b1 Buttons: Hardware key disable support with M adaptations [2/2]
-
-   * vendor/oneplus/
-2bb5899 oneplus2: Rename mm-qcamera-daemon
-2d9b758 oneplus2: Widevine blobs from op3
 
    * vendor/tesla/
-7f2c804 Updated Straight Talk APN (AT&T) Used for non Straight Talk devices (RESELLER)
+28d436a beta v3.2
+
+====================
+     11-18-2016
+====================
+
+   * OTA_config/
+eb5c91a redmi2 changelog 1118
+3d6ddde ota: update for redmi2
+
+====================
+     11-17-2016
+====================
+
+
+   * device/oneplus/bacon/
+b1a9c21 Revert "bacon: Add shim for libwvm.so"
+1279bef bacon: COMPAT_GRALLOC_ALIGN
+c2bf08b bacon: L compat
+d9838ed bacon: Add shim for libwvm.so
+
+   * device/oneplus/oneplus3/
+d6cac59 Revert "op3: Brightness tuning"
+
+   * frameworks/base/
+e372aec Revert "Camera2: add deferred output config support"
+fad01ce Camera2: add deferred output config support
+
+   * vendor/oneplus/
+ceeebe0 bacon: update blobs remove cne/dpm
+
+====================
+     11-16-2016
+====================
+
+   * OTA_config/
+d1ef012 Update lux to 15/11 build
+57b5754 Update lux changelog
+
+   * device/oneplus/bacon/
+4006663 bacon: set nfc device location
+ae895d3 bacon: enable text relocations
+833acab bacon: disable CNE/DPM/QC location
+
+   * device/oneplus/oneplus3/
+462be41 op3: Brightness tuning
+73da184 op3: fix fp location
+e958fe3 Revert "op3: Update wifi config from CB 3.5.5"
+
+   * hardware/libhardware/
+ee6dfa7 gralloc1: getphys implementation for samsung OMX
+aa00ab3 Re-add gralloc 1.0 header
+fc922f3 Remove gralloc1 header
+9afceb4 Gralloc 1.0
+
+====================
+     11-15-2016
+====================
+
+
+   * device/oneplus/oneplus2/
+1e76ec9 Waiting for n7.1 pls Revert "Revert "temp Revert "Back to closed camera"""
+1056c0f Revert "Revert "oh noes""
+8eb3693 Merge branch 'cm-14.1' of https://github.com/Grarak/android_device_oneplus_oneplus2 into HEAD
+68470b4 Revert "temp Revert "Back to closed camera""
+
+   * frameworks/base/
+5dc13f1 Proof of Concept: Allow N-R19+ devices to accept the Xposed Framework
+
+   * packages/apps/TeslaCoil/
+146a02f german translate
+
+   * vendor/oneplus/
+ec465ad Waiting for n7.1 pls Revert "oneplus2: Back to closed camera"
+6d43e56 oneplus2: Back to closed camera
 
