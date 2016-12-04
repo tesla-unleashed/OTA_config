@@ -1,283 +1,152 @@
 ====================
-     11-07-2016
+     12-04-2016
 ====================
 
-   * OTA_config/
-cf83d88 update bacon
 
-   * device/lge/hammerhead/
-6e90284 Add HAL1 camera flags
-
-   * device/motorola/lux/
-b29f257 Lux: Enable MTP/ADB by default
-
-   * device/motorola/msm8916-common/
-9edf415 Add HAL1 camera flags
-
-   * device/nvidia/shieldtablet/
-89764fa Add HAL1 camera flags
-
-   * kernel/motorola/msm8916/
-0292cc8 Merge branch 'n7.0' of https://github.com/desaishivam26/android_kernel_motorola_msm8916 into n7.0
-4bfa666 Merge branch 'cm-14.0' of https://github.com/CyanogenMod/android_kernel_motorola_msm8916 into n7.0
+   * frameworks/base/
+21b108a4 Allow custom alpha for notification shade bg color
+8892e37 Increase screenshot's timeout
+f07f6fc GlobalActions: Long press screenshot action to take a partial screenshot
+21187c2 Screenshot tile: single tap to choose the mode, long press to fire partial screenshot icon thanks to @kantjer
+dc4666a Clean up "Optional screenshot type" code in PhoneWindowManager
+6f4ec0d Optional screenshot type [1/2]
+685d883 Update Navbar Tile for Tesla
+c09bd47 Allow statusbar items to be launch without the jank [1/2]
+68bbb45 Add back 'Show brightness slider'
+e208341 QS: Expanded Desktop Tile Reloaded
+24d33ac [QUICK SETTINGS] Add Expanded Desktop QS Tile
+6f584a6 Add QSDetailItems
+74542d7 Navigation Bar Tile
 
    * manifest/
-87701f2 derp OTA config (remote is now tesla)
-80577b2 OTA config
-
-   * packages/apps/Messaging/
-5f1d178 Dark theme proper
-
-   * packages/apps/Settings/
-78dac52 edit Adam #fixit
+5ff12db fix substratum new branch
 
    * packages/apps/TeslaCoil/
-9f87291 Merge branch 'testing' of https://github.com/TeslaRom-N/packages_apps_TeslaCoil into n7.0
+f34dfc6 Optional screenshot type [2/2]
+92b4d9e Adding back 'full zen' aka do not disturb switch
+ded9045 Allow statusbar items to be launch without the jank [2/2]
 
 ====================
-     11-06-2016
+     12-03-2016
 ====================
 
-   * OTA_config/
-eaf0e89 ota update Redmi2
-ca9c794 add op3 to ota list
-bca2574 add bacon to OTA
 
    * external/DUtils/
-e5094d7 Revert "Comment out screenrecord till issue is resolved"
-1b9c81e Revert "Small adjustment"
-
-   * frameworks/av/
-81c1f46 libstagefright: Support for legacy camera/encoder buffers
+166a942 Update UserContentObserver for 7.1
 
    * frameworks/base/
-7548ea3 Use system for volume dialog
-c43febb Merge branch 'testing' of https://github.com/TeslaRom-N/frameworks_base into HEAD
-5feddbd N-Extras: Add dynamic theme fonts support
-318add1 N-Extras: AudioService: Allow system effect sounds to be themed
-b5c5796 N-Extras: Add dynamic theme BootAnimation support
-d2846ef OMS7-N: Implement multi-target enable/disable and disable-all [11/11]
-00baf04 OMS7-N: Do not enforce code policy limiting overlay installation [10/11]
-614cdca OMS7-N: Persistence on boot through OverlayManagerServiceImpl [9/11]
-0fc0245 OMS7-N: Disable Zygote preloaded drawables [8/11]
-b1d01413 OMS7-N: installd: add command 'rmidmap' [7/11]
-d17b0c1 OMS7-N: Fix memory leak during idmap creation [6/11]
-98093b0 OMS7-N: idmap: suppress print for padded resources [5/11]
-2682354 OMS7-N: Set EXTRA_REPLACING correctly in ACTION_PACKAGE_ADDED [4/11]
-4566b97 OMS7-N: Integrate OverlayManagerService into framework [3/11]
-6b3d450 OMS7-N: Introduce the OverlayManagerService [2/11]
-40bfad8c OMS7-N: Support tagging resources as OK to overlay [1/11]
-4476761 This revert all fw-base oms3 commits + extras
-0490460 Buttons: Hardware key disable support with M adaptations [1/2]
-2ecce97 Fix QS background theming
-
-   * packages/apps/Bluetooth/
-56e115c Revert "Remove DayNight theme"
-
-   * packages/apps/KernelAdiutor/
-e13aa06 Theming cleanup
-
-   * packages/apps/Messaging/
-debce35 Few changes
-f9febce Night mode updates
-ba1f06e Messaging DayNight switching Add the capability for aosp messaging to switch with DayNight. there are zero drawable edits, only style and color changes. As is, there are minor unthemed elements in the message text input and contact search results due to not being able to change them without altering drawables.
-
-   * packages/apps/PackageInstaller/
-2887027 DayNight: Add inverse night drawables
-64d92b9 DayNight
+44bbedd Option to use volume keys to control media volume anytime (2/2)
+051915a Buttons: Hardware key disable support with M adaptations [1/2]
+b3ebede frameworks/base: Don't report existing menu key if it was remapped. [2/3]
+ebb902c Buttons: Bring up DU hardware key action binding framework [1/2]
+b380954 Fix showing carrier label on keyguard status bar after reboot even it was disabled
+3c78da2 Custom Carrier Label & Carrier Label Placement [1/2] [Squashed] Squash Of: Keyguard/Statusbar Carrier label options [1/2] * Stock behavior(only on keyguard), only on statusbar,both disabled or both enabled * code originally writted by @Altaf-Mahdi i just squased into one commit PureNexusProject-Legacy/android_frameworks_base@688d56f
+9f94fc9 Fix build on 7.1
+0872a78 DUI: Initialize package monitor class
+2addb64 DUI: Initial DUI checkin for N
+ad67b12a DUI: core building support
+22fdbe5 statusbar: add screenPinningStateChanged(boolean enabled) api and pipe to navigation bar
+7bfa813 Pulse: forward port visualizer lock api
+4f25385 Bring back some removed statusbar API
+dc3f890 Runtime toggle of navbar This commit is signifigantly modified for DU, however, we maintain original authorship for API. Navbar visibility has no hardware contraints. Visibility is determined entirely from user settings and sane defaults based on factory configuration and emulator build prop.
+8f2dd56 Squashed commit for expanded desktop
+b84be8a Add Screen Record to the Power Menu [1/2]
+8cd5b13 Add a timer to screen record
+106b6b2 Save screenrecord in "Screenrecords" directory
+4792f21 screen record: make sure to always delete tmp files
+3ea60b6 Screen Recording: forward port from 4.4
+60c2b9d bring back screen record shortcut
 
    * packages/apps/Settings/
-c6cec3a Merge branch 'n7.0' into testing
-977074d DayNight Manifest Changes
+4376c36 add expanded desktop category in teslacoil (1/2)
+ca96308 DUI: Initial N checkin
+1982e6e Settings: Squashed commit for expanded desktop
 
    * packages/apps/TeslaCoil/
-653c458 Lets theme the slider indicator
-ce072b1 Buttons: Hardware key disable support with M adaptations [2/2]
-c9bc749 Enable single tap rebinding for hwkey back and home
-0b5d662 Buttons: HwKey action binding preferences [3/3]
-7b21823 Revert "Hardwarekey rebinding (2/2)"
-904cd63 Revert "add config to make HwKeys depend on an overlay(2/2)"
+51d4d22 Option to use volume keys to control media volume anytime (1/2) Some users don't adjust ringtone volume often (e.g. only use toggle to switch between silent and non-silent) mode. Having an option to use the volume keys to control media volume anytime allows media volume to be controllled/muted before entering a game or other apps with sound in an undesirable location.
+fbdd2d1 strings: navigation buttons < Hardware keys
+f86c40e Buttons: Hardware key disable support with M adaptations [2/2]
+aeed613 Enable single tap rebinding for hwkey back and home
+c79a576 Buttons: HwKey action binding preferences [3/3]
+0454ffc add vector for carrier label category
+3d1cf25 Custom Carrier Label & Carrier Label Placement [2/2] [Squashed] Credit/Thanks to @Altaf-Mahdi @beanstown106 and @martincz
+f4d0e44 add expanded desktop category in teslacoil (2/2)
+7a54640 SmartBar: add Flip button animation [2/2]
+dd07074 little fixes
+35dc6a2 switch to colorAccent
+9bc50fa Fling: Fix FC in Fling settings when configuration changes
+51a0d71 DUI: Initial N checkin
+544af74 move navbar toggle to Navigation cat
+dca0e51 add a navbar toggle
+2e9c674 Add Screen Record to the Power Menu [2/2]
 
    * vendor/tesla/
-7f2c804 Updated Straight Talk APN (AT&T) Used for non Straight Talk devices (RESELLER)
+2b12604 Revert "Revert "DIU Build utils library and add as boot jar""
 
 ====================
-     11-05-2016
+     12-02-2016
 ====================
 
-   * OTA_config/
-9b349b7 OTA for Redmi2
 
-   * build/
-d71280c Later Browser hello Chromium
-586c20d Clean up a few packages
-38cd183 Changelog in settings (3)
+   * device/motorola/lux/
+fce59e3 Permissive SElinux
 
    * frameworks/base/
-7222c46 frameworks/base: Don't report existing menu key if it was remapped. [2/3]
-ef634b9 Buttons: Bring up DU hardware key action binding framework [1/2]
-40dba78 Revert "Hardware key custom rebinding (1/2)"
-6df7585 Revert "add config to make HwKeys depend on an overlay(1/2)"
-dd0c302 Bring tesla night theme back
-944e4af Revert "Remove DayNight themes from public API (again)"
-592a7ba Revert "Remove DayNight theme"
-e5f0fdc Revert "Remove -night qualified resources"
+2a86ab4 Make Build.TYPE and Build.FINGERPRINT consistent for apps.
 
-   * packages/apps/Settings/
-ec5e4c1 Bring tesla theme back
-310071e bring myself in
-44323e6 did i say you can be there? lol
-255aeda tesla about; add myself :)
-76432b2 tesla about: add me
-c11b689 tesla about: add Char
-e89436b Tesla about: add me
-
-   * packages/apps/TeslaCoil/
-a71957b make a screenshot category
-8bf02b5 make a lockscreen visualizer category
-
-   * vendor/tesla/
-6661f5e Merge branch 'n7.0' of https://github.com/TeslaRom-N/vendor_tesla into n7.0
-11f635d include device in tesla.version to match OTA config
-2baac80 Bring in Chromium
-205b5a5 Build OTA app
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
+a245adf Initial commit
 
 ====================
-     11-04-2016
+     12-01-2016
 ====================
 
-   * OTA_config/
-2166eff start over with TeslaN
-
-   * frameworks/av/
-8a4d2a8 camera/media: Support for legacy camera HALv1
-0cb2d34 CameraService: Notify flashlight about device close
-a339184 Camera service: Trust telephony service to forward client UIDs.
-2ff1c88 Revert "av: Add support for CameraSource as metadata type"
-
-   * frameworks/base/
-86613d5 Optional screenshot type [1/2]
-8095a7b Revert "Move weather down to header"
-015d44b Move weather down to header
-7d1271a Add a timer to screen record
-94df779 Save screenrecord in "Screenrecords" directory
-a1dbdc6 screen record: make sure to always delete tmp files
-8726aea Screen Recording: forward port from 4.4
-3ab93d1 bring back screen record shortcut
-
-   * hardware/qcom/media-caf/msm8974/
-a30e39a libstagefrighthw: Remove padding in encoder_nativehandle_buffer_type
-cdbf224 mm-video-v4l2: venc: update metadata-type used for HAL1 based recording
-
-   * packages/apps/Eleven/
-afdb6bc Fix MediaSession queue handling.
-272271f Eleven: Simplify MediaSession queue processing
-
-   * packages/apps/PackageInstaller/
-48bd0e6 Fix PackageInstaller FC when tapping on a downloaded apk notification
-
-   * packages/apps/Settings/
-05fa97f fix TeslaAbout.java for nougat
-cf59d9a A cold with some code = what just happened
-bdb31ea About Tesla Section
-4ca8228 Changelog in settings(1)
-697968a Add TeslaOTA
-
-   * packages/apps/Snap/
-51d5e54 Merge remote-tracking branch 'cm/cm-14.0' into n7.0
-
-   * packages/apps/TeslaCoil/
-fb8f25c Optional screenshot type [2/2]
-
-====================
-     11-03-2016
-====================
-
-
-   * bionic/
-3cd8ab7 Merge tag 'android-7.1.0_r4' into n7.0-caf
-de6aec4 Revert "bionic: Registration of trapping calls during libc initialization"
-32841d3 linker: load shims prior to dt_needed check
-8bd5584 Revert "bionic: Allow devices to add device specfic static libs"
-2a9193b bionic: fix scorpion architecture
-37488df linker: Make platform text relocations denial optional
-1b73e3f libc: allow forcing compilation with gcc
-791c0e6 bionic: Use a more simple strrchr for arm64
-7525f17 libc: AArch64: Tune memcpy
-5c54d3a libc: ARM64: add assembly strrchr
-21b6ff4 libc: ARM64: improve performance in strlen
-564e388 libc: ARM64: optimize memset.
-8888772 libc: ARM64: Optimize memcpy.
-5aec606 libc: ARM64: remove bcopy from memset
-9a1b9c1 libc: arm: add optimized memchr implementation
-4e3795a libc: Add Scorpion-optimized variant
-d8acafe Revert "linker: Avoid logcat spam in QCOM A-Family"
 
    * build/
-d42fce8 Fix a race condition while building the recovery patch (needed for msm8226)
-b91fbff ninja: increase maximum suffix length
-a4958c0 Add LOCAL_AIDL_FLAGS
-45ed79b Show complete command with args when ComputePatch fails
-9f9f633 ninja: use host's ninja if it exists
-c8e9230 build: Allow both OpenJDK and OracleJDK by default
-0e85378 build: use the system's ccache by default
+8a4985a Say Goodbye API
 
    * device/lge/hammerhead/
-ee5f8e7 Tesla N Bringup
+ba2ac83 hammerhead: Remove enhanced NFC feature
 
-   * device/motorola/msm8916-common/
-3fdc078 Make config_bt_addr servive oneshot again
-
-   * frameworks/av/
-b3d90dc MediaProfiles: Enhance profiles for extended usecases
-90e13d3 av: Add support for CameraSource as metadata type
+   * device/nvidia/shieldtablet/
+49a46d9 Use legacy camera system
+21eb80e Whitelist dev node used by zygote
+51b74a2 Revert "Use multithread decode for boot animation."
+422d13d Fix camera shim.
 
    * frameworks/base/
-a9255d6 few fixes
-06aa1a6 Merge branch 'testing' of https://github.com/TeslaRom-N/frameworks_base into HEAD
-b5dce20 sysui: Use pixel navbar icons
-0108db0 frameworks: Toast long timeout fix
-b770f0a sysui: New google pixel colors
-a5b24cc base: New google pixel colors
-aa78c66 Fix Google Calendar FC
-25aa799 Fix race condition when writing UidState of appops.
-ae3f7b2 Fix NPE from AppOpsManager.checkPackage.
-7ad0190 webview_packages: correct signature definition for Chrome Stable
-97c41e0 [ActivityManager] Reset killed flag at attachApplicationLocked
-03fae03 Clear pending activity launches when force stop package
-5fe834b [ActivityManager] Fix the inconsistence between ProcessRecord and BroadcastQueues
-00e8f7d Fix to NullPointerException when activity is relaunched
-a688891 Let's cut Max Excape Animation in Half
-a86a0d0 Change night mode icons to match DU Tweaks setting
-89c45ed Clean up the tuner service/activity
-6d4009b Fix the Night mode on/off switch
-46535cf Don't check tuner availability to allow night mode
-dc1284e Remove unnecessary videos
-aecd090 Delete media tests
-a0df602 Fix NativeDaemonConnectorException issue accessing null object
-4b4552b [DownloadManager] Enqueue download request might fail and cause NullPointerException
-3b6a505 PowerManager: don't pass NULL pointers to power HAL
-80b5f97 frameworks: Fix keyboard layout notification missing issue
-700eef4 Fix DismissView cannot be clicked sometimes after boot
-35afe11 [AssetManager]:Fix thread race caused double free issue.
-fa5c9a4 Fix WallpaperManager APIs
-bc8529d Fix window animation flash issue
-f6f3fdd Change toast frames color to some better look ones
-0f7d6e6 Allow statusbar items to be launch without the jank [1/2]
+6ac480f Lockscreen weather improvementssquashed
+fab158b Keyguard: Create lockscreen weather
+b88a10f fix fc
+6999254 Build fixes
+4f26299 Allow adjusting screen density to smaller sizes.
+911487c Lockscreen : Only animate targets if launched via swipe
+b22aa0d SystemUI: fix double tap power launching custom lockscreen icon
+8ab202d SystemUI: avoid lock screen shortcut picker crash
+7619efa SettingsProvider : Add functions for delimited strings
+34016bd SystemUI: Lockscreen shortcut customization Squashed with: Fix leftAffordanceView visibility bug 121c7a982cd88bef53b79baf3665db9c415281f8 LockscreenShortcuts: Since Voice assist is default use its icon 7e6c2ebf86fe95300705ce5da847ac0ee855e1b7
 
-   * packages/apps/Settings/
-40fc61c Try some pixel colors
-ca9919d Move App Ops to Main Settings
-0c0c913 settings: Fix viewpager tabs not showing on AppOpsSummary
-8a49b24 Return App Ops (bug - without tabs)
-
-   * packages/apps/Snap/
-029226f Revert "temp: disable hwkeys"
-0ce2bbc Allow to use power key as shutter
-d86244c snap: Provide a way to remove Snap from the build
+   * kernel/motorola/msm8916/
+69f8cd9 Even milder undervolt for improved compatibility
+c4a381a Mild undervolt
 
    * packages/apps/TeslaCoil/
-64e8ce8 switch to color accent for better theming
-0b0f6c9 Fix derps try a few pixel color changes
-83f864c Squash: Move tuner to TeslaCoil
+32ed9ea Lockscreen weather squashed
+bc3e33f Show summary for Teslacoil dashboard entry
+b20e826 Add Lockscreen shortcuts
+
+   * packages/apps/masquerade/
+6b6f33e Release 20: Finalize Icon Pack Handling for Masquerade
+244a92f Release 19: Properly show toast when config changing
+1cdd2f6 Release 18: Icon Pack Studio Stable
+61e43a6 Allow Substratum to share the icon helper function with the bypass
+6e6159d Release 17: Allow more flexibility with icon packs
+
+   * packages/services/Telephony/
+84ebf5d [2/3] Flip to Mute/Reject Call
+
+====================
+     11-30-2016
+====================
+
 
