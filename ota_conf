@@ -1,5 +1,5 @@
 #Common OTA url for all devices
-ota_url=https://raw.githubusercontent.com/TeslaRom-N/OTA_config/master/TeslaOTA.xml
+ota_url=https://raw.githubusercontent.com/tesla-unleashed/OTA_config/master/TeslaOTA.xml
 release_type=Stable
 device_name=ro.product.device
  
