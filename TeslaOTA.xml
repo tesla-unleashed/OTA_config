@@ -11,10 +11,6 @@
                 id="changelog"
                 title="Changelog"
                 description="View TeslaN changelogs"></ChangelogUrl>
-            <GappsUrl
-                id="gapps"
-                title="Gapps"
-                description="Download latest Banks gapps"></GappsUrl>
         </hammerhead>
         <jflte>
             <Filename></Filename>
@@ -26,10 +22,17 @@
                 id="changelog"
                 title="Changelog"
                 description="View TeslaN changelogs"></ChangelogUrl>
-            <GappsUrl
-                id="gapps"
-                title="Gapps"
-                description="Download latest Banks gapps"></GappsUrl>
         </jflte>
+        <celox>
+            <Filename></Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download TeslaN build"></RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View TeslaN changelogs"></ChangelogUrl>
+        </celox>
     </Stable>
 </SlimOTA>
